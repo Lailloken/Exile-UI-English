@@ -22,11 +22,14 @@
     },
     "azmerianranges": {
       "name": "azmerian ranges",
-      "boss": "king in the mists + brambleghast"
+      "boss": "morwyn"
     },
     "backwash": {
       "name": "backwash",
       "boss": "queen of filth"
+    },
+    "bastille": {
+      "name": "bastille"
     },
     "bloodwood": {
       "name": "bloodwood",
@@ -44,9 +47,15 @@
       "name": "burial bog",
       "boss": "rootdredge"
     },
-    "castaway": {
-      "name": "castaway",
-      "boss": "torrek"
+    "caldera": {
+      "name": "caldera"
+    },
+    "canyon": {
+      "name": "canyon",
+      "boss": "vornas"
+    },
+    "caverncity": {
+      "name": "sacred reservoir"
     },
     "cenotes": {
       "name": "cenotes"
@@ -55,9 +64,8 @@
       "name": "channel",
       "boss": "hask"
     },
-    "coppercitadel": {
-      "name": "the copper citadel",
-      "boss": "jamanra2"
+    "cliffside": {
+      "name": "cliffside"
     },
     "creek": {
       "name": "creek",
@@ -75,9 +83,22 @@
       "name": "decay",
       "boss": "rotten druid"
     },
+    "derelictmansion": {
+      "name": "derelict mansion"
+    },
     "deserted": {
       "name": "deserted",
       "boss": "lord of the pit"
+    },
+    "epitaph": {
+      "name": "epitaph"
+    },
+    "excavation": {
+      "name": "digsite"
+    },
+    "flotsam": {
+      "name": "flotsam",
+      "boss": "torrek"
     },
     "forge": {
       "name": "forge",
@@ -106,12 +127,11 @@
     "hive": {
       "name": "hive"
     },
-    "ironcitadel": {
-      "name": "the iron citadel",
-      "boss": "geonor"
+    "icecave": {
+      "name": "ice cave"
     },
-    "lake": {
-      "name": "the fractured lake"
+    "inferno": {
+      "name": "inferno"
     },
     "loftysummit": {
       "name": "lofty summit",
@@ -121,9 +141,9 @@
       "name": "lost towers",
       "boss": "chetza"
     },
-    "megalith": {
-      "name": "the phaaryl megalith",
-      "boss": "megalith bosses"
+    "marrow": {
+      "name": "marrow",
+      "boss": "tor gul"
     },
     "mesa": {
       "name": "mesa",
@@ -145,8 +165,14 @@
       "name": "oasis",
       "boss": "jamanra"
     },
-    "paradise": {
-      "name": "untainted paradise"
+    "ornatechambers": {
+      "name": "ornate chambers"
+    },
+    "outlands": {
+      "name": "outlands"
+    },
+    "overgrown": {
+      "name": "overgrown"
     },
     "penitentiary": {
       "name": "penitentiary",
@@ -156,9 +182,24 @@
       "name": "ravine",
       "boss": "zicoatl"
     },
+    "razedfields": {
+      "name": "razed fields"
+    },
+    "riverhold": {
+      "name": "riverhold"
+    },
     "riverside": {
       "name": "riverside",
       "boss": "silverfist"
+    },
+    "rockpools": {
+      "name": "rockpools"
+    },
+    "rugosa": {
+      "name": "rugosa"
+    },
+    "rupture": {
+      "name": "rupture"
     },
     "rustbowl": {
       "name": "rustbowl",
@@ -175,9 +216,11 @@
       "name": "seepage",
       "boss": "rotten druid"
     },
-    "selenite": {
-      "name": "the silent cave",
-      "boss": "random boss"
+    "sevenwaters": {
+      "name": "confluence"
+    },
+    "sinkhole": {
+      "name": "sinkhole"
     },
     "slick": {
       "name": "slick"
@@ -186,6 +229,9 @@
       "name": "spider woods",
       "boss": "brambleghast"
     },
+    "spring_": {
+      "name": "spring"
+    },
     "steamingsprings": {
       "name": "steaming springs",
       "boss": "kabala"
@@ -193,9 +239,8 @@
     "steppe": {
       "name": "steppe"
     },
-    "stonecitadel": {
-      "name": "the stone citadel",
-      "boss": "doryani"
+    "stronghold": {
+      "name": "stronghold"
     },
     "sulphuriccaverns": {
       "name": "sulphuric caverns",
@@ -216,24 +261,66 @@
     "trenches": {
       "name": "trenches"
     },
+    "uberboss_coppercitadel": {
+      "name": "the copper citadel",
+      "boss": "jamanra2"
+    },
+    "uberboss_ironcitadel": {
+      "name": "the iron citadel",
+      "boss": "geonor"
+    },
+    "uberboss_jadecitadel": {
+      "name": "the jade isles"
+    },
+    "uberboss_stonecitadel": {
+      "name": "the stone citadel",
+      "boss": "doryani"
+    },
+    "uniquecastaway": {
+      "name": "castaway",
+      "boss": "torrek"
+    },
+    "uniquelake": {
+      "name": "the fractured lake"
+    },
+    "uniquemegalith": {
+      "name": "the ezomyte megaliths",
+      "boss": "megalith bosses"
+    },
+    "uniqueselenite": {
+      "name": "the silent cave",
+      "boss": "random boss"
+    },
+    "uniqueuntaintedparadise": {
+      "name": "untainted paradise"
+    },
+    "uniquewildwood": {
+      "name": "the viridian wildwood"
+    },
     "vaalcity": {
       "name": "vaal city",
       "boss": "viper"
     },
     "vaalfactory": {
-      "name": "vaal factory",
+      "name": "the assembly",
       "boss": "zicoatl"
     },
     "vaalfoundry": {
-      "name": "vaal foundry",
+      "name": "molten vault",
       "boss": "mektul"
+    },
+    "vaalvault": {
+      "name": "sealed vault"
+    },
+    "vaalvillage": {
+      "name": "vaal village"
+    },
+    "waywardisle": {
+      "name": "wayward isle"
     },
     "wetlands": {
       "name": "wetlands",
-      "boss": "devourer"
-    },
-    "wildwood": {
-      "name": "the viridian wildwood"
+      "boss": "hyena"
     },
     "willow": {
       "name": "willow",

@@ -33,7 +33,7 @@
 ;## system-settings
 ;#####################################################
 
-;## these are some global system-settings that are dependant on the target language
+;## these are some global system-settings that are dependent on the target language
 		system_font			=	"Fontin SmallCaps"		;## except for Fontin SmallCaps, the specified font-type has to be installed on the system
 											;## this key is also present in the client.txt file, where it takes precedence (i.e. the value there will override this one)
 
@@ -68,6 +68,7 @@
 		ms_mapping tracker		=	"map-tracker"
 		ms_map-info			=	"map-info"
 		ms_minor qol tools		=	"minor qol tools"
+		ms_news				=	"announcements"
 		ms_sanctum			=	"sanctum planner"
 		ms_sanctum			=	"sekhema planner"
 		ms_screen-checks		=	"screen-checks"
@@ -185,6 +186,7 @@
 		global_apply			=	"apply changes"
 		global_global			=	"global"
 		global_controller		=	"controller"		;## gamepad
+		global_keyboard			=	"keyboard"
 		global_multithreading		=	"multi-threaded"	;## i.e. using multiple CPU cores/threads
 		global_multithreading		=	"single-threaded"
 		global_ignore			=	"ignore"
@@ -218,6 +220,9 @@
 		global_trade			=	"trade"
 		global_trade			=	"trades"
 		global_last			=	"last"
+		global_gem			=	"gem"
+		global_gem			=	"gems"
+		global_act			=	"act"
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -354,7 +359,7 @@
 ;#####################################################
 
 ;## these strings are displayed/required when using the vaal street feature
-		exchange_chaos_div		=	"chaos/div;ratio required!"
+		exchange_chaos_div		=	"conversion;ratio required!"
 		exchange_7days			=	"past 7 days"
 
 
@@ -393,7 +398,8 @@
 		lvltracker_deleteall		=	"del all"
 
 
-		lvltracker_gemnotes		=	"not included in pob"
+		lvltracker_gemnotes		=	"not included in PoB"
+		lvltracker_gemfail		=	"no gems in PoB"
 		lvltracker_gemregex		=	"regex copied"
 		lvltracker_gemregex		=	"regex failed"
 
@@ -415,7 +421,7 @@
 		lvltracker_multipaste		=	"# entries starting from # will potentially be overwritten.;Continue?"	;## the placeholders will be replaced by numbers
 		lvltracker_noimages		=	"couldn't find;image-files"
 		lvltracker_timererror		=	"can't resume: run complete"			;## campaign timer can't be resumed because the run has finished
-		lvltracker_timererror		=	"enter the first zone to reset"			;## timer can only be reset with a fresh character
+		lvltracker_timererror		=	"enter the first zone or town to reset"			;## timer can only be reset in specific areas
 		lvltracker_timererror		=	"pause the timer first"
 		lvltracker_timererror		=	"blocked by hideout-pause setting"		;## there's a setting "pause timer in hideouts" which blocks manual resuming
 		lvltracker_timermessage		=	"run started"
@@ -430,13 +436,14 @@
 
 
 		lvltracker_format_kill		=	"kill"						;## the string that follows this word will automatically be highlighted as a unique boss
-		lvltracker_format_act		=	"a#c"						;## abbreviation, e.g. "act 1 cruel": used when the guide leads to a location in a different act (e.g. "enter a1c | clearfell encampment")
+		lvltracker_format_act		=	"a"						;## abbreviation: used when the guide leads to a location in a different act (e.g. "enter a1 | clearfell encampment")
+		lvltracker_format_interlude	=	"int "						;## abbreviation: used when the guide leads to a location in a different act (e.g. "enter i1 | the refuge")
 		lvltracker_format_epilogue	=	"epilogue"
 		lvltracker_format_optional	=	"optional:"					;## in guides, lines with optional tasks/steps should start with this string because there is a setting to hide these lines
 
 
 		lvltracker_editor		=	"guide editor"					;## PoE2 only (whole block)
-		lvltracker_editor_slot		=	"slot"						;## the act-tracker has 3 slots to save guides into
+		lvltracker_editor_slot		=	"slot"						;## the act-tracker has multiple slots to save guides into
 		lvltracker_editor_acts		=	"acts:"
 		lvltracker_editor_save		=	"unsaved changes:"
 		lvltracker_editor_export	=	"export guide"
@@ -448,8 +455,12 @@
 		lvltracker_editor_hint		=	"hint / more info"
 		lvltracker_editor_quest-name	=	"quest-name"
 		lvltracker_editor_quest-item	=	"quest-item"
+		lvltracker_editor_color		=	"apply custom color"
 		lvltracker_editor_remove	=	"remove page"
-		lvltracker_editor_add		=	"add page"
+		lvltracker_editor_condition	=	"no condition"
+
+
+		lvltracker_gempickups		=	"gem pickups"					;## a manager to adjust when gems should be picked up
 
 
 ;#####################################################
@@ -471,8 +482,7 @@
 ;#####################################################
 
 ;## these strings are displayed/required when using the map-info feature
-		mapinfo_mod			=	"mods:"		;## as in map mod
-		mapinfo_rip			=	"rips:"		;## as in "rest in peace", used here as a replacement for revives on waystones
+		mapinfo_rip			=	"rips"		;## as in "rest in peace", used here to replace "revives available: x" with "x rips"
 
 
 
@@ -481,6 +491,7 @@
 ;#####################################################
 
 ;## these strings are displayed/required when using the map-tracker feature
+		maptracker_idle			=	"not tracking"
 		maptracker_kills		=	"press the omni-key to;start the kill-tracker"
 		maptracker_kills		=	"kill-count updated"
 		maptracker_check		=	"double-check;map content!"
@@ -503,6 +514,7 @@
 		maptracker_map			=	"map"
 		maptracker_tier			=	"t/l"			;## (map) tier / (area) level
 		maptracker_tier			=	"tier/level"		;## as in map-tier / area-level
+		maptracker_tier			=	"t"
 		maptracker_run			=	"run"			;## refers to run-time (how long it took to finish the map)
 		maptracker_e-exp		=	"e-exp"			;## effective exp (after penalties)
 		maptracker_deaths		=	"deaths"
@@ -769,6 +781,7 @@
 		m_general_admin			=	"restart script as admin"
 		m_general_toolbar		=	"toolbar-size:"
 		m_general_hidetoolbar		=	"hide the toolbar when not in use"
+		m_general_input			=	"input method:"
 
 
 
@@ -1031,6 +1044,14 @@
 
 
 ;#####################################################
+;## settings menu: news / announcements
+;#####################################################
+
+
+;## these strings are displayed/required in the "announcements" section of the settings menu
+		m_news_recent			=	"most recent announcements:"
+
+;#####################################################
 ;## settings menu: minor qol tools
 ;#####################################################
 
@@ -1052,6 +1073,7 @@
 		m_sanctum_enable		=	"enable the sanctum planner overlay"
 		m_sanctum_enable		=	"enable the sekhema planner overlay"
 		m_sanctum_cheatsheets		=	"show cheat-sheet"
+		m_sanctum_relics		=	"enable the relic-management overlay"
 
 
 
