@@ -84,7 +84,7 @@
     },
     {
       "id": "g2_3a",
-      "name": "the halani gates"
+      "name": "the halani gates (blocked)"
     },
     {
       "id": "g2_3",
@@ -227,224 +227,178 @@
   ],
   [
     {
-      "id": "c_g1_1",
-      "name": "the riverbank"
+      "id": "g4_town",
+      "name": "kingsmarch"
     },
     {
-      "id": "c_g1_town",
-      "name": "clearfell encampment"
+      "id": "g4_1_1",
+      "name": "isle of kin"
     },
     {
-      "id": "c_g1_2",
-      "name": "clearfell"
+      "id": "g4_1_2",
+      "name": "volcanic warrens"
     },
     {
-      "id": "c_g1_3",
-      "name": "mud burrow"
+      "id": "g4_2_1",
+      "name": "kedge bay"
     },
     {
-      "id": "c_g1_4",
-      "name": "the grelwood"
+      "id": "g4_2_2",
+      "name": "journey's end"
     },
     {
-      "id": "c_g1_5",
-      "name": "the red vale"
+      "id": "g4_3_1",
+      "name": "whakapanu island"
     },
     {
-      "id": "c_g1_6",
-      "name": "the grim tangle"
+      "id": "g4_3_2",
+      "name": "singing caverns"
     },
     {
-      "id": "c_g1_7",
-      "name": "cemetery of the eternals"
+      "id": "g4_4_1",
+      "name": "eye of hinekora"
     },
     {
-      "id": "c_g1_8",
-      "name": "mausoleum of the praetor"
+      "id": "g4_4_2",
+      "name": "halls of the dead"
     },
     {
-      "id": "c_g1_9",
-      "name": "tomb of the consort"
+      "id": "g4_4_3",
+      "name": "trial of the ancestors"
     },
     {
-      "id": "c_g1_10",
-      "name": "root hollow"
+      "id": "g4_5_1",
+      "name": "abandoned prison"
     },
     {
-      "id": "c_g1_11",
-      "name": "hunting grounds"
+      "id": "g4_5_2",
+      "name": "solitary confinement"
     },
     {
-      "id": "c_g1_12",
-      "name": "freythorn"
+      "id": "g4_7",
+      "name": "shrike island"
     },
     {
-      "id": "c_g1_13_1",
-      "name": "ogham farmlands"
+      "id": "g4_8a",
+      "name": "arastas"
     },
     {
-      "id": "c_g1_13_2",
-      "name": "ogham village"
+      "id": "g4_8b",
+      "name": "arastas (hostile)"
     },
     {
-      "id": "c_g1_14",
-      "name": "the manor ramparts"
+      "id": "g4_10",
+      "name": "the excavation"
     },
     {
-      "id": "c_g1_15",
-      "name": "ogham manor"
+      "id": "g4_11_1a",
+      "name": "ngakanu"
+    },
+    {
+      "id": "g4_11_1b",
+      "name": "ngakanu (hostile)"
+    },
+    {
+      "id": "g4_11_2",
+      "name": "heart of the tribe"
+    },
+    {
+      "id": "g4_13",
+      "name": "plunder's point"
     }
   ],
   [
     {
-      "id": "c_g2_1",
-      "name": "vastiri outskirts"
+      "id": "p1_town",
+      "name": "the refuge"
     },
     {
-      "id": "c_g2_town",
-      "name": "the ardura caravan"
+      "id": "p1_1",
+      "name": "scorched farmlands"
     },
     {
-      "id": "c_g2_2",
-      "name": "traitor's passage"
+      "id": "p1_2",
+      "name": "stones of serle"
     },
     {
-      "id": "c_g2_3a",
-      "name": "the halani gates"
+      "id": "p1_3",
+      "name": "the blackwood"
     },
     {
-      "id": "c_g2_3",
-      "name": "the halani gates"
+      "id": "p1_4",
+      "name": "holten"
     },
     {
-      "id": "c_g2_4_1",
-      "name": "keth"
+      "id": "p1_5",
+      "name": "wolvenhold"
     },
     {
-      "id": "c_g2_4_2",
-      "name": "the lost city"
-    },
-    {
-      "id": "c_g2_4_3",
-      "name": "buried shrines"
-    },
-    {
-      "id": "c_g2_5_1",
-      "name": "mastodon badlands"
-    },
-    {
-      "id": "c_g2_5_2",
-      "name": "the bone pits"
-    },
-    {
-      "id": "c_g2_6",
-      "name": "valley of the titans"
-    },
-    {
-      "id": "c_g2_7",
-      "name": "the titan grotto"
-    },
-    {
-      "id": "c_g2_8",
-      "name": "deshar"
-    },
-    {
-      "id": "c_g2_9_1",
-      "name": "path of mourning"
-    },
-    {
-      "id": "c_g2_9_2",
-      "name": "the spires of deshar"
-    },
-    {
-      "id": "c_g2_10_1",
-      "name": "mawdun quarry"
-    },
-    {
-      "id": "c_g2_10_2",
-      "name": "mawdun mine"
-    },
-    {
-      "id": "c_g2_12_1",
-      "name": "the dreadnought"
-    },
-    {
-      "id": "c_g2_12_2",
-      "name": "dreadnought vanguard"
+      "id": "p1_6",
+      "name": "holten estate"
     }
   ],
   [
     {
-      "id": "c_g3_1",
-      "name": "sandswept marsh"
+      "id": "p2_town",
+      "name": "the khari bazaar"
     },
     {
-      "id": "c_g3_town",
-      "name": "ziggurat encampment"
+      "id": "p2_1",
+      "name": "the khari crossing"
     },
     {
-      "id": "c_g3_2_1",
-      "name": "infested barrens"
+      "id": "p2_2",
+      "name": "pools of khatal"
     },
     {
-      "id": "c_g3_2_2",
-      "name": "the matlan waterways"
+      "id": "p2_3",
+      "name": "sel khari sanctuary"
     },
     {
-      "id": "c_g3_4",
-      "name": "the venom crypts"
+      "id": "p2_5",
+      "name": "the galai gates"
     },
     {
-      "id": "c_g3_3",
-      "name": "jungle ruins"
+      "id": "p2_6",
+      "name": "qimah"
     },
     {
-      "id": "c_g3_5",
-      "name": "chimeral wetlands"
+      "id": "p2_7",
+      "name": "qimah reservoir"
+    }
+  ],
+  [
+    {
+      "id": "p3_town",
+      "name": "the glade"
     },
     {
-      "id": "c_g3_6_1",
-      "name": "jiquani's machinarium"
+      "id": "p3_1",
+      "name": "ashen forest"
     },
     {
-      "id": "c_g3_6_2",
-      "name": "jiquani's sanctum"
+      "id": "p3_2",
+      "name": "kriar village"
     },
     {
-      "id": "c_g3_7",
-      "name": "the azak bog"
+      "id": "p3_3",
+      "name": "glacial tarn"
     },
     {
-      "id": "c_g3_8",
-      "name": "the drowned city"
+      "id": "p3_4",
+      "name": "howling caves"
     },
     {
-      "id": "c_g3_9",
-      "name": "the molten vault"
+      "id": "p3_5",
+      "name": "kriar peaks"
     },
     {
-      "id": "c_g3_10_airlock",
-      "name": "the temple of chaos"
+      "id": "p3_6",
+      "name": "etched ravine"
     },
     {
-      "id": "c_g3_11",
-      "name": "apex of filth"
-    },
-    {
-      "id": "c_g3_12",
-      "name": "temple of kopec"
-    },
-    {
-      "id": "c_g3_14",
-      "name": "utzaal"
-    },
-    {
-      "id": "c_g3_16",
-      "name": "aggorat"
-    },
-    {
-      "id": "c_g3_17",
-      "name": "the black chambers"
+      "id": "p3_7",
+      "name": "the cuachic vault"
     }
   ],
   [
