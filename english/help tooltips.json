@@ -201,7 +201,8 @@
     "cloneframes toggle-info": [
       "clone-frames can be toggled on/off automatically to avoid blocking in-game content",
       "global: settings will apply to every clone-frame\ncustom: each frame can have its own settings",
-      "below, you can choose how clone-frames behave when certain in-game interfaces are on screen"
+      "below, you can choose how clone-frames behave when certain in-game interfaces are on screen",
+      "requires additional setup in the <screen-checks> section(/highlight)"
     ],
     "cloneframes toggle-modes": [
       "ignore: clone-frames will ignore what is on screen and will never toggle",
@@ -220,6 +221,11 @@
     ],
     "cloneframes delete": [
       "long-click to delete this clone-frame"
+    ],
+    "cloneframes groups": [
+      "optional: you can assign frames to groups 0 to 9",
+      "when editing a frame's opacity or target coordinate (yellow), the whole group will be edited accordingly",
+      "hold <shift> while editing to ignore group settings and only edit the currently-selected frame(/highlight)"
     ],
     "cloneframes toggle": [
       "enable/disable this clone-frame"
@@ -301,7 +307,7 @@
     "iteminfo reset": [
       "long-click one of the buttons to reset specific highlighting in the currently-selected profile"
     ],
-    "iteminfo <omni-key>": [
+    "iteminfo omni-key": [
       "hold the <omni-key> while hovering over items to activate the tooltip: if already active, simple omni-clicks will activate/refresh it again",
       "click into the game or press <esc> to close it"
     ],
@@ -332,7 +338,7 @@
     ],
     "iteminfo shift-click": [
       "automatically refreshes/activates the tooltip when applying currency to items via shift-click",
-      "you have to hold <shift> first, right click currency, and then click items"
+      "you have to hold <shift> first, right click currency, and then click items(/highlight)"
     ],
     "iteminfo league-start": [
       "adds a section where the item's stats are compared to your current gear",
@@ -459,6 +465,10 @@
     "leveltracker folder": [
       "opens the folder with overlay images",
       "if you want to edit the images yourself, you can move them to this folder manually"
+    ],
+    "leveltracker tree hotkey": [
+      "optional: if you close the in-game passive tree by pressing its hotkey again or the <close all ui> hotkey, you can specify it here",
+      "whenever you press that hotkey to close the in-game tree, the tree overlay will also close"
     ],
     "leveltracker profile create": [
       "click to add a guide slot"
@@ -892,9 +902,13 @@
       "this is what bookmarked price tags look like"
     ],
     "stash enable": [
-      "stash feature that overlays price-tags onto currencies in specific stash tabs",
+      "stash feature that overlays price-tags onto items in specific stash tabs",
       "long-press the <omni-key> while hovering over an item in a tab to activate the feature",
       "there needs to be at least one tab-folder somewhere in your stash (the overlay will be slightly offset otherwise)(/highlight)"
+    ],
+    "stash enable 2": [
+      "stash feature that overlays poe.ninja price-tags onto items in specific stash tabs",
+      "long-press the <omni-key> while hovering over an item in a tab to activate the feature"
     ],
     "stash hotkey": [
       "this hotkey is exclusive to streaming clients, and pressing it will open an exclusive selection menu that lists the available tabs",
@@ -1259,7 +1273,7 @@
       "press <q> or <e> to switch between individual skill-trees",
       "hold <w> to show an overview of the whole tree",
       "hold number-keys <1> through <4> to show the individual ascendancy-trees",
-      "press <space> to move the tree's starting point (white/yellow circle) to the cursor's position",
+      "l-click: drag in-game tree || r-click: drag overlay\n(both can be dragged simultaneously)\nm-click: snap white/yellow circle to cursor",
       "hold <alt> to temporarily hide the overlay"
     ],
     "opacity": [
@@ -1540,12 +1554,23 @@
     ],
     "gamescreen": [
       "(/bold)(/underline)explanation:",
-      "-> this check is used to determine whether you are controlling your character or accessing a menu",
+      "-> this check is used to (loosely) determine whether a full-screen ui is on screen",
       "(/bold)(/underline)instructions:",
       "-> close every in-game menu: atlas, inventory, etc.",
       "-> the minimap has to be in the center",
-      "-> the info-panel (img) has to be fully visible",
+      "-> the infopanel (img) has to be fully visible",
       "-> click <cal>",
+      "-> follow the instructions in <test>"
+    ],
+    "gamescreen 2": [
+      "(/bold)(/underline)explanation:",
+      "-> this check is used to (loosely) determine whether a full-screen ui is on screen",
+      "(/bold)(/underline)instructions:",
+      "-> close every in-game menu: atlas, inventory, etc.",
+      "-> the minimap has to be in the center",
+      "-> the infopanel (img) has to be fully visible",
+      "-> long-click <cal>: a 'crosshair' and zoom-widget will follow the cursor",
+      "-> drag the 'crosshair' onto a letter in the infopanel (as shown on the img)",
       "-> follow the instructions in <test>"
     ],
     "inventory": [
