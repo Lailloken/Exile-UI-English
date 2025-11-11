@@ -65,6 +65,7 @@
 		ms_hotkeys			=	"hotkeys"
 		ms_item-info			=	"item-info"
 		ms_leveling tracker		=	"act-tracker"
+		ms_macros			=	"chat macros"
 		ms_mapping tracker		=	"map-tracker"
 		ms_map-info			=	"map-info"
 		ms_minor qol tools		=	"minor qol tools"
@@ -256,6 +257,7 @@
 		mechanic_seer			=	"nameless seer"
 		mechanic_mist			=	"reflecting mist"
 		mechanic_infamous		=	"infamous mercenary"
+		mechanic_graftblood		=	"high graftblood"
 
 
 
@@ -760,7 +762,6 @@
 		m_general_browser		=	"browser features"
 		m_general_capslock		=	"capslock-toggling"		;## by default, AHK will toggle capslock back and forth whenever it sends key-strokes
 		m_general_character		=	"char"
-		m_general_build			=	"build"
 		m_general_level			=	"lvl"
 		m_general_client		=	"game-client settings:"
 		m_general_client		=	"game-client info:"
@@ -1010,6 +1011,16 @@
 
 
 ;#####################################################
+;## settings menu: chat macros
+;#####################################################
+
+;## these strings are displayed/required in the "chat macros" section of the settings menu
+		m_macros_fasttravel		=	"fast-travel macros:"
+		m_macros_custom			=	"custom macros:"
+
+
+
+;#####################################################
 ;## settings menu: map-tracker
 ;#####################################################
 
@@ -1180,6 +1191,7 @@
 		m_updater_version		=	"current:"
 		m_updater_version		=	"latest:"
 		m_updater_versions		=	"available downloads:"
+		m_updater_recent		=	"recent changes:"
 		m_updater_github		=	"github links:"
 		m_updater_github		=	"main page"
 		m_updater_github		=	"releases"
