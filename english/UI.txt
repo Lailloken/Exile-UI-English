@@ -162,6 +162,7 @@
 		global_setup			=	"setup"
 		global_variance			=	"variance (0-255)"
 		global_hotkey			=	"hotkey:"
+		global_hotkey			=	"alt. hotkey:"		;## alternative hotkey
 		global_panelsize		=	"panel-size:"
 		global_uisize			=	"ui-size:"
 		global_auto			=	"auto"
@@ -229,6 +230,8 @@
 		global_alt			=	"alt"
 		global_shift			=	"shift"
 		global_shiftclick		=	"shift-click"
+		global_pause			=	"pause"
+		global_resume			=	"resume"
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -468,8 +471,11 @@
 		lvltracker_editor_remove	=	"remove page"
 		lvltracker_editor_condition	=	"no condition"
 
-
+		lvltracker_itembuy		=	"buy items"
 		lvltracker_gempickups		=	"gem pickups"					;## a manager to adjust when gems should be picked up
+		lvltracker_gemreward		=	"take:"						;## when handing in quests, the guide will prompt you to take specific rewards
+		lvltracker_gembuy		=	"buy gems"					;## the guide will tell you to buy gems that you unlocked via questing
+		lvltracker_gembuy		=	"(hold omni-key)"
 
 
 ;#####################################################
@@ -832,6 +838,7 @@
 		m_actdecoder_opacity		=	"opacity when locked:"
 		m_actdecoder_zoom		=	"zoom when locked:"
 		m_actdecoder_simple		=	"only show generic layouts"
+		m_actdecoder_missing		=	"act-decoder:;no layouts"
 
 
 
