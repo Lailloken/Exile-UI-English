@@ -138,7 +138,8 @@
 
 ;## -----------------------------------------------------------------------------------
 		log_level			=	"is now level"			;## PoE1 and PoE2 (whole block), when your character levels up
-		log_whois			=	"is a level # in the"		;## using the /whois in-game command, e.g. "Lailloken is a level 69 Champion in the Standard League..."
+		log_whois			=	"is a level # in the"		;## this identifies the response of the /whois in-game command, then extracts the number from it
+		log_whois_class			=	"level # in the"		;## similar to above, but specifically isolates a string containing class/ascendancy and the surrounding words, then removes numbers and surrounding words
 		log_slain			=	"has been slain"		;## when your character dies
 		log_suicide			=	"has committed suicide"		;## when your character dies from self-damage
 		log_killed			=	"You have killed # monsters"	;## when activating the "/kills" command
@@ -482,6 +483,15 @@
 		mods_contract_alert		=	"per # Alert Level"					;## from alert-specific mods on contracts
 		mods_memory_magnitude		=	"increased Explicit Modifier magnitudes"		;## atlas memories apply an enchant that multiplies mod-values on maps (you'll have to use a memory and talk to Kirac to see this line)
 
+
+;## these are some quest/NPC names that are required for the guide's routing logic
+		quest_lilly			=	"lilly"
+		quest_tarkleigh			=	"tarkleigh"
+
+		quest_fixture			=	"a fixture of fate"					;## A3 library quest
+		quest_mercy			=	"mercy mission"						;## A1 medicine chest quest
+		quest_fallen			=	"fallen from grace"					;## A6 twilight strand quest
+		quest_breaking			=	"breaking some eggs"					;## A1 rhoa nest quest
 
 ;## these are the names on Timeless Jewels, just in case the target language uses localized names		;## PoE1 only (whole block)
 		seed_brutal restraint		=	"asenath"
