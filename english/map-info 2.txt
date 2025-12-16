@@ -80,11 +80,6 @@ type	=	monsters
 text	=	extra magic: +%
 ID	=	008
 
-[# increased number of Rare Monsters]
-type	=	monsters
-text	=	extra rares: +%
-ID	=	009
-
 [# increased amount of Magic Chests]
 type	=	area
 text	=	magic chests: +%
@@ -195,7 +190,7 @@ type	=	monsters
 text	=	inc damage: +%
 ID	=	029
 
-[# increased Monster Movement Speed|# increased Monster Attack Speed|# increased Monster Cast Speed]
+[Monsters have # increased Attack, Cast and Movement Speed]
 type	=	monsters
 text	=	speed: +%
 ID	=	030

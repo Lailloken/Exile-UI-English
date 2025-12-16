@@ -8,6 +8,10 @@
       "advanced features and performance options are available",
       "examples:\n- clone-frames fps options"
     ],
+    "multi-threading off": [
+      "check this box if you occasionally get errors about the secondary thread crashing",
+      "checking this box will restart the tool(/highlight)"
+    ],
     "kill timer": [
       "automatically closes the tool if the game client is not running",
       "specify how long it may run without the game"
@@ -424,7 +428,7 @@
       "includes level recommendations for some areas or boss fights"
     ],
     "leveltracker recommendation 2": [
-      "shows level recommendations for optimizing acts 1-4 in the bottom-left corner",
+      "shows level recommendations for highly-optimized act 1-4 runs in the bottom-left corner",
       "it shows two numbers:\nrecommended level when entering a zone\nrecommended level when leaving a zone"
     ],
     "leveltracker geartracker": [
