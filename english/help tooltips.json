@@ -66,7 +66,7 @@
     ],
     "active character whois": [
       "click this button to use the \"/whois\" in-game command to force-refresh character info",
-      "make sure the in-game chat box is closed but available(/highlight)"
+      "make sure the in-game chat box is closed but accessible(/highlight)"
     ],
     "ascendancy": [
       "the game only logs ascendancies when a character levels up",
@@ -620,8 +620,29 @@
       "2) when you write something into local chat, tracking will automatically switch to the guide-slot with that character's name"
     ],
     "lootfilter enable": [
-      "provides an interface to modify your lootfilter and apply changes on the fly",
-      "shift-omni-click items to access it"
+      "provides an editor to modify your neversink or filterblade filter and apply changes on the fly",
+      "it can be accessed via the menu-widget or by pressing a <modifier-key> + <omni-key> over an item",
+      "when it's already open, normal omni-key presses over items will start a new search",
+      "(/highlight)item filtering has a high chance of user error, so be careful"
+    ],
+    "lootfilter filter-tester": [
+      "optional testing/fine-tuning for global presets in the editor",
+      "drop the currencies shown on the right, then adjust the presets and click <test>"
+    ],
+    "lootfilter filter-tester apply": [
+      "applies a custom item filter in game that can be used to test/preview various settings",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
+    ],
+    "lootfilter filter-tester presets": [
+      "pick a preset and fine-tune the value by using the slider, then click <test> below"
+    ],
+    "lootfilter filter-tester restore": [
+      "(/highlight)click this button after you're done testing: it re-applies your previous in-game filter",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
+    ],
+    "lootfilter modifier keys": [
+      "hover over items, hold down the modifier-key, and press the the omni-key to open the lootfilter editor for that specific item",
+      "alternatively, you can open the editor via the menu-widget"
     ],
     "macros animations": [
       "disable menu-widget animations"
@@ -1460,68 +1481,150 @@
     ]
   },
   "lootfilter": {
-    "add stack": [
-      "enter a stack size, then click this label to add a custom stack rule for this base type"
+    "cancel": [
+      "discard unsaved/pending modifications and go back to when you last clicked <apply>"
     ],
-    "apply mods": [
-      "long-click to create and apply the new file",
-      "(/highlight)the /itemfilter in-game command will be used, so make sure the chat box is closed and accessible"
+    "color background": [
+      "background color",
+      "click to open the color palette, right-click to revert to the basefilter color"
     ],
-    "backgroundcolor": [
-      "click to select the background color, right-click to reset to the previous color"
+    "color border": [
+      "border color",
+      "click to open the color palette, right-click to revert to the basefilter color"
     ],
-    "bordercolor": [
-      "click to select the border color, right-click to reset to the previous color"
+    "color text": [
+      "text color",
+      "click to open the color palette, right-click to revert to the basefilter color"
     ],
-    "textcolor": [
-      "click to select the text color, right-click to reset to the previous color"
+    "economy cut-offs": [
+      "enter a value x and click <apply/update> to hide everything under x chaos. enter 0 to revert to defaults",
+      "(/highlight)sometimes, there's a discrepancy in categorization between poe.ninja and neversink filters (currency vs fragment)",
+      "(/highlight)these economy-checks will only move items according to poe.ninja's categories (e.g. currency)"
     ],
-    "basefilter": [
-      "select the filter you want to use as the base",
-      "a separate file with your customizations will be created and then applied in game, leaving the base filter unchanged"
+    "economy cut-offs 2": [
+      "enter a value x and click <apply/update> to hide everything under x exalts. enter 0 to revert to defaults",
+      "(/highlight)sometimes, there's a discrepancy in categorization between poe.ninja and neversink filters (currency vs fragment)",
+      "(/highlight)these economy-checks will only move items according to poe.ninja's categories (e.g. currency)"
     ],
-    "global item-classes": [
-      "enabling this option will reveal additional checkboxes underneath",
-      "you have to tick at least one item-class to enable this override",
-      "this will also hide high-tier items:\nunidentified (tier x)"
+    "expand": [
+      "expand every section that is currently collapsed"
     ],
-    "global overrides": [
-      "the options below can be used to quickly modify filtering for larger item-groups",
-      "changes made here will always take precedence over individual customizations, even if the search-results list may not reflect it"
+    "filter apply modifications": [
+      "applies unsaved/pending modifications to the filter and loads it into the game",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
     ],
-    "gui color": [
-      "click to select the background color underneath item labels, or right-click to reset to default"
+    "filter apply update": [
+      "reloads the base filter, then applies your modifications and loads it into game",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
     ],
-    "hide": [
-      "hide the entire item-group in game"
+    "filter select": [
+      "!local! copies of your online filters (and when they were last updated)",
+      "(/highlight)the game doesn't delete leftover files when you delete online filters, so this list may be very long",
+      "(/highlight)right-click a filter on the list to delete the local copy"
     ],
-    "highlight color": [
-      "click to select the color used to highlight rule modifications, or right-click to reset to default"
+    "global setting info": [
+      "global quick-settings are always applied first, before normal modifications",
+      "this lets you make broad changes first, and more specific changes on top"
     ],
-    "incompatible": [
-      "some modifications no longer apply to the new base filter and will be discarded after applying the updates",
-      "this usually means that the new base filter no longer has a specific rule you toggled previously"
+    "global setting economy": [
+      "lets you hide items based on current poe.ninja prices",
+      "click this label to open the settings menu and select your current league"
     ],
-    "modifications": [
-      "list of modifications currently applied/pending: long-click this header panel to clear the whole list",
-      "(shift-)click an item name to search for the base type(s), right-click to remove it"
+    "global setting maps": [
+      "lets you set a tier cut-off for regular maps (i.e. not influenced, blighted, etc.)",
+      "click this label to browse the corresponding section in the filter"
     ],
-    "refresh": [
-      "reload the folder's contents, the selected base filter, and the modded filter",
-      "(/highlight)unsaved changes will be lost"
+    "global setting maps toggles": [
+      "0: use base filter's rules",
+      "x: hide maps below tier x",
+      "17: hide all regular maps"
     ],
-    "revert": [
-      "revert every modification in this group"
+    "global setting strands": [
+      "lets you set a cut-off for memory-strand items",
+      "neversink filters have extra highlighting for high-strand items",
+      "click this label to browse the corresponding section in the filter"
     ],
-    "search": [
-      "type in item base types and press <enter> to search for existing rules: supports regex, and comma-separation for multi-searches",
-      "you can also (shift-)omni-click items in game to search for the base type(s)"
+    "global setting strands toggles": [
+      "0: use base filter's rules",
+      "x (high): items with x or more strands have extra highlighting\nx (minimum): items with x or more strands will be highlighted",
+      "max out the <minimum> slider to only highlight high-strand items, or max both to ignore strands as a highlighting aspect."
     ],
-    "search reset": [
-      "clear the current search, and show global override options"
+    "global setting gems": [
+      "lets you set a cut-off for leveled/quality regular gems (i.e. not exceptional, transfigured, etc.)",
+      "the filter only checks one value at a time: gems at or above either cut-off will be shown",
+      "click this label to browse the corresponding section in the filter"
     ],
-    "style color": [
-      "click to select the color used to highlight style modifications, or right-click to reset to default"
+    "global setting gems toggles": [
+      "0: use base filter's rules",
+      "x: hide gems below x levels or quality",
+      "max out the sliders to hide every leveled/quality regular gem"
+    ],
+    "global setting unavailable": [
+      "the selected filter has an unexpected structure: this quick-setting cannot be applied"
+    ],
+    "global setting visuals": [
+      "lets you set up unified size and opacity settings for the whole filter",
+      "click this label to open the settings menu and adjust presets i to iii"
+    ],
+    "global setting visuals toggles": [
+      "off: use base filter's visuals",
+      "i-iii: use a fixed value for every item"
+    ],
+    "home button": [
+      "open the main/home screen with global settings",
+      "you can also middle click while hovering over the editor"
+    ],
+    "list reload": [
+      "refresh the list of local copies of your online filters",
+      "you have to activate online filters at least once in game to get a local copy"
+    ],
+    "modhistory": [
+      "the sequence of boxes below represents the modifications you applied to the filter",
+      "hover over the boxes for more info. click this bar to collapse this section."
+    ],
+    "opacity": [
+      "opacity customization is reduced to three fixed presets that can be adjusted in the settings",
+      "defaults: 100  |  150  |  255"
+    ],
+    "profiles": [
+      "you can switch between three different profiles to set up different sets of filter modifications"
+    ],
+    "section browse": [
+      "click this label to open the corresponding section in the filter"
+    ],
+    "size": [
+      "size customization is reduced to three fixed presets that can be adjusted in the settings",
+      "defaults: 25  |  35  |  45"
+    ],
+    "types": [
+      "these bars show how the filter is divided into types",
+      "click this bar to collapse this type, right-click to browse it"
+    ],
+    "tiers": [
+      "these sections show how types are further divided into tiers",
+      "click items for more specific options, right-click them to start a global search",
+      "click this bar to collapse this tier, right-click to browse it"
+    ],
+    "rollback": [
+      "click this box to browse the tier that was modified",
+      "hold right-click to go back to this point and delete !every! modification after it: make sure the in-game chat box is closed but accessible"
+    ],
+    "search field": [
+      "press the omni-key over an item to find the specific match",
+      "manual searching has basic regex functionality and supports multi-keyword searches via comma separation"
+    ],
+    "search history": [
+      "lets you go back and forth in your search/browse history",
+      "you can also scroll the mouse wheel while hovering over the editor"
+    ],
+    "rule hideshow": [
+      "this toggle affects !every! item in this tier"
+    ],
+    "update check": [
+      "sync the local copy with the online filter: this applies the !base! filter in game, which forces an update check",
+      "(/highlight)make sure the in-game chat box is closed but accessible",
+      "(/highlight)you'll have to click <apply> afterwards to reload your customizations",
+      "there is a server-side sync cooldown if the online filter has been updated multiple times recently (e.g. via filterblade)"
     ]
   },
   "maptracker": {
