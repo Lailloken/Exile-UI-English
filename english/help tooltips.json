@@ -449,7 +449,7 @@
     ],
     "leveltracker recommendation 2": [
       "shows level recommendations for highly-optimized act 1-4 runs in the bottom-left corner",
-      "it shows two numbers:\nrecommended level when entering a zone\nrecommended level when leaving a zone"
+      "it shows two numbers:\n1: recommended lvl when entering a zone\n2: recommended lvl when leaving a zone\n(if you're tracking your lvl, it'll show that in between)"
     ],
     "leveltracker geartracker": [
       "notifies you when you meet gear or gem requirements after lvl-ups (mainly a twink feature):\nthe guide overlay will display <gear rdy>",
@@ -508,7 +508,8 @@
       "it will also reset gem-pickup customizations(/highlight)"
     ],
     "leveltracker editor": [
-      "open the editor to edit the guide in this slot"
+      "open the editor to edit the guide in this slot",
+      "(/highlight)guide slots with custom edits will be protected from updates, but you should store the exports in a separate file just to be safe"
     ],
     "leveltracker guide info": [
       "there are up to nine individual guide slots you can use and switch between",
@@ -639,6 +640,14 @@
     "lootfilter filter-tester restore": [
       "(/highlight)click this button after you're done testing: it re-applies your previous in-game filter",
       "(/highlight)make sure the in-game chat box is closed but accessible"
+    ],
+    "lootfilter filter-tester sounds": [
+      "pick a sound effect from the list to apply it to scrolls of wisdom and hear it in game",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
+    ],
+    "lootfilter filter-tester sound tags": [
+      "optionally, you can tag/rename sound effects 1-16 to make them easier to remember",
+      "type in a tag/name, then press <enter>"
     ],
     "lootfilter modifier keys": [
       "hover over items, hold down the modifier-key, and press the the omni-key to open the lootfilter editor for that specific item",
@@ -1481,6 +1490,13 @@
     ]
   },
   "lootfilter": {
+    "beams": [
+      "beam of light that can be added to dropped items (black = off)",
+      "click to open the color palette, right-click to revert to the basefilter color"
+    ],
+    "beams temp": [
+      "toggles whether the beam is temporary or permanent"
+    ],
     "cancel": [
       "discard unsaved/pending modifications and go back to when you last clicked <apply>"
     ],
@@ -1499,12 +1515,17 @@
     "economy cut-offs": [
       "enter a value x and click <apply/update> to hide everything under x chaos. enter 0 to revert to defaults",
       "(/highlight)sometimes, there's a discrepancy in categorization between poe.ninja and neversink filters (currency vs fragment)",
-      "(/highlight)these economy-checks will only move items according to poe.ninja's categories (e.g. currency)"
+      "(/highlight)filter rules will be created according to poe.ninja's categories"
     ],
     "economy cut-offs 2": [
       "enter a value x and click <apply/update> to hide everything under x exalts. enter 0 to revert to defaults",
       "(/highlight)sometimes, there's a discrepancy in categorization between poe.ninja and neversink filters (currency vs fragment)",
-      "(/highlight)these economy-checks will only move items according to poe.ninja's categories (e.g. currency)"
+      "(/highlight)filter rules will be created according to poe.ninja's categories"
+    ],
+    "economy stacks": [
+      "optionally, you can create additional rules for items below the cut-off so that higher stacks will still show",
+      "example: if your cut-off is 1 and an item is worth 0.6, it will be hidden, but stacks of 2+ will be shown",
+      "(/highlight)these rules max out at stack sizes of 6 and have 10% leeway"
     ],
     "expand": [
       "expand every section that is currently collapsed"
@@ -1522,32 +1543,17 @@
       "(/highlight)the game doesn't delete leftover files when you delete online filters, so this list may be very long",
       "(/highlight)right-click a filter on the list to delete the local copy"
     ],
-    "global setting info": [
-      "global quick-settings are always applied first, before normal modifications",
-      "this lets you make broad changes first, and more specific changes on top"
-    ],
     "global setting economy": [
       "lets you hide items based on current poe.ninja prices",
       "click this label to open the settings menu and select your current league"
     ],
-    "global setting maps": [
-      "lets you set a tier cut-off for regular maps (i.e. not influenced, blighted, etc.)",
+    "global setting flasks": [
+      "lets you set a cut-off for quality flasks",
       "click this label to browse the corresponding section in the filter"
     ],
-    "global setting maps toggles": [
+    "global setting flasks toggles": [
       "0: use base filter's rules",
-      "x: hide maps below tier x",
-      "17: hide all regular maps"
-    ],
-    "global setting strands": [
-      "lets you set a cut-off for memory-strand items",
-      "neversink filters have extra highlighting for high-strand items",
-      "click this label to browse the corresponding section in the filter"
-    ],
-    "global setting strands toggles": [
-      "0: use base filter's rules",
-      "x (high): items with x or more strands have extra highlighting\nx (minimum): items with x or more strands will be highlighted",
-      "max out the <minimum> slider to only highlight high-strand items, or max both to ignore strands as a highlighting aspect."
+      "x: hide flasks below x% quality"
     ],
     "global setting gems": [
       "lets you set a cut-off for leveled/quality regular gems (i.e. not exceptional, transfigured, etc.)",
@@ -1567,15 +1573,48 @@
       "0: use base filter's rules",
       "x: hide gems below level x"
     ],
+    "global setting info": [
+      "global quick-settings are always applied first, before normal modifications",
+      "this lets you make broad changes first, and more specific changes on top"
+    ],
+    "global setting maps": [
+      "lets you set a tier cut-off for regular maps (i.e. not influenced, blighted, etc.)",
+      "click this label to browse the corresponding section in the filter"
+    ],
+    "global setting maps toggles": [
+      "0: use base filter's rules",
+      "x: hide maps below tier x",
+      "17: hide all regular maps"
+    ],
+    "global setting sockets 2": [
+      "lets you set an item-size cut-off for socketed gear (salvage bench: artificer's orb)",
+      "click this label to browse the corresponding section in the filter"
+    ],
+    "global setting sockets toggles": [
+      "off: use base filter's rules",
+      "none: don't highlight socketed gear",
+      "small: only highlight small items",
+      "all: highlight every socketed item"
+    ],
+    "global setting strands": [
+      "lets you set a cut-off for memory-strand items",
+      "neversink filters have extra highlighting for high-strand items",
+      "click this label to browse the corresponding section in the filter"
+    ],
+    "global setting strands toggles": [
+      "0: use base filter's rules",
+      "x (high): items with x or more strands have extra highlighting\nx (minimum): items with x or more strands will be highlighted",
+      "max out the <minimum> slider to only highlight high-strand items, or max both to ignore strands as a highlighting aspect."
+    ],
     "global setting unavailable": [
       "the selected filter has an unexpected structure: this quick-setting cannot be applied"
     ],
     "global setting visuals": [
-      "lets you set up unified size and opacity settings for the whole filter",
+      "lets you set up unified style settings for the whole filter",
       "click this label to open the settings menu and adjust presets i to iii"
     ],
     "global setting visuals toggles": [
-      "off: use base filter's visuals",
+      "off: use base filter's presentation",
       "i-iii: use a fixed value for every item"
     ],
     "home button": [
@@ -1586,12 +1625,22 @@
       "refresh the list of local copies of your online filters",
       "you have to activate online filters at least once in game to get a local copy"
     ],
+    "minimap color": [
+      "color of the minimap icon (black = off)",
+      "click to open the color palette, right-click to revert to the basefilter color"
+    ],
+    "minimap icon": [
+      "minimap icon"
+    ],
+    "minimap size": [
+      "size of the minimap icon"
+    ],
     "modhistory": [
       "the sequence of boxes below represents the modifications you applied to the filter",
       "hover over the boxes for more info. click this bar to collapse this section."
     ],
     "opacity": [
-      "opacity customization is reduced to three fixed presets that can be adjusted in the settings",
+      "opacity customization is streamlined to three fixed presets that can be adjusted in the settings",
       "defaults: 100  |  150  |  255"
     ],
     "profiles": [
@@ -1601,7 +1650,7 @@
       "click this label to open the corresponding section in the filter"
     ],
     "size": [
-      "size customization is reduced to three fixed presets that can be adjusted in the settings",
+      "size customization is streamlined to three fixed presets that can be adjusted in the settings",
       "defaults: 25  |  35  |  45"
     ],
     "types": [
@@ -1610,8 +1659,8 @@
     ],
     "tiers": [
       "these sections show how types are further divided into tiers",
-      "click items for more specific options, right-click them to start a global search",
-      "click this bar to collapse this tier, right-click to browse it"
+      "click this bar to collapse the tier, right-click to access tier customization",
+      "click items for more options, right-click them to start a global search"
     ],
     "rollback": [
       "click this box to browse the tier that was modified",
@@ -1624,6 +1673,14 @@
     "search history": [
       "lets you go back and forth in your search/browse history",
       "you can also scroll the mouse wheel while hovering over the editor"
+    ],
+    "sounds pick": [
+      "select a sound effect for this rule",
+      "sound effects can be previewed and tagged/renamed in the settings menu"
+    ],
+    "sounds volume": [
+      "volume customization is streamlined to three fixed presets that can be adjusted in the settings",
+      "defaults: 100  |  200  |  300"
     ],
     "rule hideshow": [
       "this toggle affects !every! item in this tier"
