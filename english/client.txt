@@ -222,12 +222,6 @@
 		log_expedition			=	"Rog:"					;## for some reason, Rog is always displayed as simply "Rog", regardless of when he speaks (at least in English)
 		log_expedition			=	"Tujen, the Haggler:"
 
-;## -----------------------------------------------------------------------------------
-		log_expedition 2		=	"Dannig, Warrior Skald:"		;## PoE2 only
-		log_expedition 2		=	"Gwennen:"
-		log_expedition 2		=	"Rog:"
-		log_expedition 2		=	"Tujen:"
-
 
 
 ;#####################################################
@@ -265,6 +259,7 @@
 		items_phys_dmg			=	"Physical Damage:"
 		items_dmg				=	"# Damage:"
 		items_chaos_dmg		=	"Chaos Damage:"
+		items_dmg_minmax		=	" or "						;## there are items that only roll the min or max value and nothing in between: X or Y
 
 		items_ele_dmg			=	"Elemental Damage:"				;## PoE1 only, ele-dmg is displayed differently
 
