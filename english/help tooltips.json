@@ -80,6 +80,9 @@
       "select the league you're currently playing in",
       "this information can be used in various features for price-checking and logging purposes"
     ],
+    "league selection other": [
+      "this is a global setting: click this button to open the <general> tab and select your current league"
+    ],
     "league update": [
       "check for new leagues/events"
     ],
@@ -193,6 +196,12 @@
       "pressing the key combination will open the correct sheet for what is on screen in game",
       "for the tool to know which sheet is the correct one, manual calibration is required",
       "opens the clipping tool: use it to clip a unique element from the in-game ui"
+    ],
+    "cheatsheets samples get": [
+      "add this sample cheat-sheet to the list of active ones"
+    ],
+    "cheatsheets samples update": [
+      "a newer version of this sample cheat-sheet is available: click this button to update your copy"
     ],
     "cheatsheets test": [
       "click while the specific in-game ui is on screen, the test should return positive",
@@ -904,6 +913,36 @@
       "type in the hotkey you want to use to activate this feature",
       "don't bind it to modifier-keys or keys used for chatting in order to prevent accidentally activating the feature",
       "check the links above if you want to use special keys/combinations"
+    ],
+    "runeshaping auto-correct input": [
+      "type in one or more (comma-separated) strings that need to be replaced because of recurring ocr inaccuracies",
+      "press <enter> to save your edits"
+    ],
+    "runeshaping auto-correct output": [
+      "enter the string that replaces the ones on the left"
+    ],
+    "runeshaping color high": [
+      "color used to highlight the highest price"
+    ],
+    "runeshaping color stack": [
+      "color used to highlight stack-size issues"
+    ],
+    "runeshaping color unknown": [
+      "color used to highlight pricing issues"
+    ],
+    "runeshaping debug": [
+      "pressing <alt> + <omni-key> will open the screen-cap and ocr results",
+      "this can be used to find scan issues and set up an 'auto-correct dictionary'"
+    ],
+    "runeshaping dictionary": [
+      "if scans have recurring inaccuracies, you can set up pairs of text strings to potentially fix these issues",
+      "this list is always (!) active: the checkbox above merely enables editing(/highlight)"
+    ],
+    "runeshaping enable": [
+      "scans the rewards offered on runic remnants and displays their poe.ninja prices",
+      "while the runeshaping interface is on screen, hold down the <omni-key> to activate this feature",
+      "the overlay will hide automatically upon releasing the <omni-key>(/highlight)",
+      "requires the <runeshaping> screen-check to be set up correctly in the <screen-checks> section(/highlight)"
     ],
     "sanctum enable": [
       "analyzes rooms and connections on the floor map and provides tools for highlighting and planning",
@@ -1933,6 +1972,12 @@
       "-> open the inventory",
       "-> the top-right corner (img: yellow) has to be fully visible",
       "-> click <cal>",
+      "-> follow the instructions in <test>"
+    ],
+    "runeshaping": [
+      "(/bold)(/underline)instructions:",
+      "-> open the runeshaping interface: the text at the top (img) has to be fully visible",
+      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
       "-> follow the instructions in <test>"
     ],
     "sanctum": [
