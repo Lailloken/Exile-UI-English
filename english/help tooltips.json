@@ -108,6 +108,10 @@
       "blacks out the empty screen area around the client window and makes it unclickable",
       "this black area can be used to place overlays outside the client area, and it also prevents misclicks on background windows"
     ],
+    "client filler split": [
+      "only blacks out the area(s) above and/or below the game client",
+      "this means the area(s) to the left and/or right can still be used for something else"
+    ],
     "client filler taskbar": [
       "(/highlight)there may still be instances where the taskbar pops up again.\nin this case, you have to 're-focus' the game-client by pressing the windows key twice."
     ],
@@ -922,13 +926,16 @@
       "enter the string that replaces the ones on the left"
     ],
     "runeshaping color high": [
-      "color used to highlight the highest price"
+      "color used to highlight the highest price",
+      "click to open the palette, r-click to reset to default"
     ],
     "runeshaping color stack": [
-      "color used to highlight stack-size issues"
+      "color used to highlight stack-size issues",
+      "click to open the palette, r-click to reset to default"
     ],
     "runeshaping color unknown": [
-      "color used to highlight pricing issues"
+      "color used to highlight pricing issues",
+      "click to open the palette, r-click to reset to default"
     ],
     "runeshaping debug": [
       "pressing <alt> + <omni-key> will open the screen-cap and ocr results",
