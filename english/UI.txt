@@ -134,6 +134,7 @@
 		global_discard			=	"discard"
 		global_restart			=	"apply & restart"
 		global_imgfolder		=	"open img folder"
+		global_openfolder		=	"open folder"
 		global_newentry		=	"add entry:"
 		global_savedentry		=	"saved entries:"
 		global_errorname		=	"input cannot be blank"
@@ -182,6 +183,9 @@
 		global_start			=	"start"
 		global_cancel			=	"cancel"
 		global_downloading		=	"downloading..."
+		global_extracting		=	"extracting..."
+		global_copying			=	"copying..."
+		global_download		=	"download"
 		global_search			=	"search:"
 		global_toggle			=	"toggle"			;## pressing a hotkey opens a feature
 		global_hold			=	"hold"			;## feature stays open while holding a hotkey, then closes on release
@@ -267,6 +271,8 @@
 		global_memorystrands	=	"strands"
 		global_campaign		=	"campaign"
 		global_update			=	"update"
+		global_update			=	"update available"
+		global_update			=	"update check"
 		global_temp			=	"temp"			;## temporary
 		global_volume			=	"volume"			;## refers to sound
 		global_sound			=	"sound"			;## these refer to different types of sound files/effects, e.g. sound 6
@@ -945,7 +951,12 @@
 ;## these strings are displayed/required in the "act-decoder" section of the settings menu
 		m_actdecoder_enable		=	"enable the act-decoder overlay"
 		m_actdecoder_simple		=	"only show generic layouts"
-		m_actdecoder_missing	=	"act-decoder:;no layouts"
+		m_actdecoder_download	=	"download layouts:"
+		m_actdecoder_download	=	"layouts have not been downloaded yet"
+		m_actdecoder_leftover	=	"found leftover files (previous download)"
+		m_actdecoder_failed		=	"update check failed, try again later"
+		m_actdecoder_success	=	"layouts are up-to-date"
+		m_actdecoder_required	=	"but it requires a newer tool version"		;## continuation of "update available", displayed if a general tool update is required first
 
 
 
@@ -1042,8 +1053,7 @@
 		m_hotkeys_omnikey_new	=	"omni-key:"
 		m_hotkeys_omnikey_new	=	"omni-key (general):"
 		m_hotkeys_omnikey_new	=	"omni-key 2 (for items):"
-		m_hotkeys_keyblock		=	"block the keypress"										;## option that blocks what a key normally does, e.g. CapsLock-key toggles capslock-state, windows-key opens start-menu
-		m_hotkeys_keyblock		=	"keypress is blocked"										;## same as above, but as a note instead of option
+		m_hotkeys_exclusive		=	"exclusive"												;## option that blocks what a key normally does, e.g. CapsLock-key toggles capslock-state, windows-key opens start-menu
 		m_hotkeys_widget		=	"widget-key:"
 		m_hotkeys_emergency		=	"force-restart:"											;## hotkey to force-restart the tool in case of crash/hang
 		m_hotkeys_winkey		=	"win-key"													;## Windows-key
@@ -1211,7 +1221,7 @@
 ;#####################################################
 
 ;## these strings are displayed/required in the "rune-ninja" section of the settings menu
-		m_runeshaping_enable	=	"enable the rune-ninja overlay (experimental)"
+		m_runeshaping_enable	=	"enable the rune-ninja overlay"
 		m_runeshaping_correction	=	"auto-correct dictionary:"					;## a list of strings that can be set up to fix recurring scan issues
 
 

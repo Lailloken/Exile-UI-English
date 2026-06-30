@@ -73,7 +73,7 @@
     ],
     "input method 2": [
       "optional mode, (very) limited compatibility: a few features have modified behavior to remain functional in controller mode",
-      "examples:\nitem-info, omni-key context menu",
+      "examples:\nitem-info, omni-key context menu, stash-ninja, rune-ninja",
       "controller support is low-priority and based on individual requests(/highlight)"
     ],
     "active character": [
@@ -157,8 +157,11 @@
       "hold down the <widget-key> while in a supported campaign area to activate the overlay",
       "accuracy can vary from patch to patch, so use them as rough guides instead of mini-map replacement(/highlight)"
     ],
+    "actdecoder folder": [
+      "opens the act-decoder folder. you have to delete every folder and zip-file that has 'exile-ui' in its name"
+    ],
     "actdecoder hotkey": [
-      "optional: specify a hotkey as an alternative to the widget-key (which will then no longer activate the act-decoder)",
+      "specify a hotkey as an alternative to the widget-key (which will then no longer activate the act-decoder)",
       "this is primarily for improving wasd compatibility, e.g. by binding it to a thumb button (xbutton1/2) on the mouse",
       "holding this key will only activate the act-decoder, tapping it will use its normal function (e.g. a skill)(/highlight)"
     ],
@@ -986,7 +989,7 @@
     "runeshaping enable": [
       "scans the rewards offered on runic remnants and displays their poe.ninja prices",
       "while the runeshaping interface is on screen, hold down the <omni-key> to activate this feature",
-      "the overlay will hide automatically upon releasing the <omni-key>(/highlight)",
+      "requires the english language pack. if your system is not english, you can add it as a secondary language in the windows settings.(/highlight)",
       "requires the <runeshaping> screen-check to be set up correctly in the <screen-checks> section(/highlight)"
     ],
     "runeshaping hold ctrl": [
@@ -1182,7 +1185,7 @@
     "statlas enable": [
       "atlas feature that displays various information about maps on the atlas",
       "long-press the <omni-key> over maps on the atlas to activate the overlay",
-      "scroll to adjust the image size",
+      "requires the english language pack. if your system is not english, you can add it as a secondary language in the windows settings.(/highlight)",
       "requires the <atlas> screen-check to be set up correctly in the <screen-checks> section(/highlight)"
     ],
     "statlas maptracker": [
@@ -1582,6 +1585,9 @@
     "rotate 2": [
       "click: rotate 90 degrees\nr-click: rotate -90 degrees",
       "when unsure how to match indicators, always try mirroring before rotating(/highlight)"
+    ],
+    "update": [
+      "layout update available in the settings menu"
     ]
   },
   "lootfilter": {
