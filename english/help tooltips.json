@@ -499,6 +499,9 @@
       "click <act #> to pause/resume the timer",
       "how to reset: in the first zone or town, long-right-click on <act #>"
     ],
+    "leveltracker timer flash": [
+      "the timer will flash while paused to prevent you from leaving it paused accidentally"
+    ],
     "leveltracker fade-timer": [
       "automatically hides the overlay after a delay (except when in towns)",
       "delay: x seconds after switching guide pages",
@@ -929,8 +932,8 @@
       "hidden by default: hold down the <widget-key> to access it"
     ],
     "map-events enable": [
-      "displays notifications whenever certain map events spawn",
-      "examples: nameless seer, reflecting mist, infamous mercenary"
+      "displays notifications whenever certain events happen",
+      "examples: infamous mercenaries, graftblood (almost) full"
     ],
     "map-events enable event": [
       "click to enable/disable this event",
@@ -1564,8 +1567,9 @@
       "(/highlight)applying/reverting changes will also reset your guide progress"
     ],
     "skillsets": [
-      "you can disable individual skill sets and automatically set the corresponding skills to <skip>",
-      "when you hover over individual skills on the right, the corresponding skill set(s) will be highlighted"
+      "you can disable individual skill sets and automatically set the corresponding gems to <skip>",
+      "right-click an !active! skill set to move every gem to A6 that is exclusive to it (among the currently active skill sets!)",
+      "(/highlight)these are simple on/off toggles, they will not reflect individual adjustments you make on the right afterwards"
     ]
   },
   "leveltrackerschematics": {
@@ -1608,6 +1612,9 @@
     ],
     "reset": [
       "click to reset image modifications and selections/discards for this zone"
+    ],
+    "reset all": [
+      "click to reset image modifications and selections/discards for every zone"
     ],
     "rotate": [
       "click: rotate 90 degrees\nr-click: rotate -90 degrees",

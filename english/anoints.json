@@ -1,5 +1,5 @@
 {
-  "_timestamp": "2026-03-08, 21:20 (utc)",
+  "_timestamp": "2026-07-24, 07:30 (utc)",
   "amulets": {
     "Acrimony": {
       "recipe": "1, 10, 10",
@@ -12,7 +12,7 @@
       "stats": [
         "6% increased Attack Speed",
         "+100 to Accuracy",
-        "20% increased Global Accuracy"
+        "20% increased Accuracy"
       ]
     },
     "Adamant": {
@@ -111,6 +111,14 @@
         "Mana Flasks gain 1 Charge every 3 seconds"
       ]
     },
+    "Arcane Conservation": {
+      "recipe": "7, 8, 8",
+      "stats": [
+        "10% increased Cast Speed",
+        "20% increased Mana Cost Efficiency of Spells",
+        "3% increased Intelligence"
+      ]
+    },
     "Arcane Expanse": {
       "recipe": "9, 9, 13",
       "stats": [
@@ -187,9 +195,9 @@
       "recipe": "2, 11, 13",
       "stats": [
         "10% increased Attack Speed",
-        "10% increased Global Accuracy",
         "Ignore all Movement Penalties from Armour",
-        "+20 to Dexterity"
+        "+20 to Dexterity",
+        "10% increased Accuracy"
       ]
     },
     "As The Mountain": {
@@ -546,7 +554,7 @@
       "recipe": "5, 6, 6",
       "stats": [
         "Attack Skills Cost Life instead of 10% of Mana Cost",
-        "15% reduced Mana Cost of Attacks"
+        "25% increased Cost Efficiency of Attacks"
       ]
     },
     "Careful Conservationist": {
@@ -701,6 +709,13 @@
         "10% increased maximum Life"
       ]
     },
+    "Contemplative Meditation": {
+      "recipe": "6, 7, 12",
+      "stats": [
+        "8% increased Reservation Efficiency of Skills",
+        "20% increased Cost Efficiency"
+      ]
+    },
     "Coordination": {
       "recipe": "3, 9, 10",
       "stats": [
@@ -725,8 +740,8 @@
     "Counterweight": {
       "recipe": "1, 3, 12",
       "stats": [
-        "60% increased Global Crit-Chance while wielding a Staff",
-        "+30% to Global Crit-Multi while wielding a Staff"
+        "60% increased Crit-Chance while wielding a Staff",
+        "+30% to Crit-Multi while wielding a Staff"
       ]
     },
     "Courage": {
@@ -897,8 +912,8 @@
       "recipe": "3, 4, 5",
       "stats": [
         "+100 to Accuracy",
-        "20% increased Global Accuracy",
-        "25% increased Crit-Chance"
+        "25% increased Crit-Chance",
+        "20% increased Accuracy"
       ]
     },
     "Dervish": {
@@ -1059,7 +1074,7 @@
       "recipe": "2, 5, 6",
       "stats": [
         "30% increased Mana Regen Rate",
-        "10% reduced Mana Cost of Skills"
+        "15% increased Mana Cost Efficiency"
       ]
     },
     "Druidic Rite": {
@@ -1080,8 +1095,8 @@
       "recipe": "1, 1, 11",
       "stats": [
         "+150 to Accuracy",
-        "20% increased Global Accuracy",
-        "20% increased Crit-Chance"
+        "20% increased Crit-Chance",
+        "20% increased Accuracy"
       ]
     },
     "Efficient Explosives": {
@@ -1344,8 +1359,8 @@
       "recipe": "5, 6, 10",
       "stats": [
         "8% increased Attack Speed",
-        "15% increased Global Accuracy",
-        "+20 to Dexterity"
+        "+20 to Dexterity",
+        "15% increased Accuracy"
       ]
     },
     "Fingers of Frost": {
@@ -1504,7 +1519,7 @@
     "Glory of Command": {
       "recipe": "4, 7, 13",
       "stats": [
-        "40% increased Global Accuracy while you have at least 1 nearby Ally",
+        "40% increased Accuracy while you have at least 1 nearby Ally",
         "15% increased Area-of-Effect for Attacks while you have at least 1 nearby Ally"
       ]
     },
@@ -1798,7 +1813,7 @@
       "stats": [
         "10% increased maximum Energy-shield",
         "16% increased maximum Mana",
-        "10% reduced Mana Cost of Skills while on Full Energy-shield"
+        "16% increased Mana Cost Efficiency"
       ]
     },
     "Inspiring Bond": {
@@ -1953,8 +1968,8 @@
       "stats": [
         "20% increased Spell Damage",
         "30% increased Spell Crit-Chance",
-        "10% increased Light-Radius",
-        "+10 to Strength and Intelligence"
+        "+10 to Strength and Intelligence",
+        "10% increased Light-Radius"
       ]
     },
     "Lightning Walker": {
@@ -2324,9 +2339,9 @@
     "Precision": {
       "recipe": "2, 2, 9",
       "stats": [
-        "10% increased Global Accuracy",
         "6% increased Attack Speed and Cast Speed",
-        "+20 to Dexterity"
+        "+20 to Dexterity",
+        "10% increased Accuracy"
       ]
     },
     "Prepared Response": {
@@ -2552,7 +2567,7 @@
       "recipe": "2, 2, 5",
       "stats": [
         "22% increased maximum Mana",
-        "6% reduced Mana Cost of Skills"
+        "12% increased Mana Cost Efficiency"
       ]
     },
     "Righteous Fury": {
@@ -2635,7 +2650,7 @@
     "Savage Intensity": {
       "recipe": "6, 6, 11",
       "stats": [
-        "20% reduced Cost of Attacks while you have at least 20 Rage",
+        "30% increased Cost Efficiency of Attacks",
         "Inherent loss of Rage is 20% slower"
       ]
     },
@@ -2692,8 +2707,8 @@
     "Serpent Stance": {
       "recipe": "6, 10, 11",
       "stats": [
-        "40% increased Global Crit-Chance while wielding a Staff",
-        "+30% to Global Crit-Multi while wielding a Staff",
+        "40% increased Crit-Chance while wielding a Staff",
+        "+30% to Crit-Multi while wielding a Staff",
         "+5% Chance to Block Attack Damage if you've dealt a Critical Strike Recently"
       ]
     },
@@ -2713,7 +2728,7 @@
     "Shaman's Dominion": {
       "recipe": "1, 6, 12",
       "stats": [
-        "60% increased Crit-Chance with Totem Skills",
+        "50% increased Crit-Chance with Totem Skills",
         "+20% to Crit-Multi with Totem Skills"
       ]
     },
@@ -2755,8 +2770,8 @@
       "recipe": "11, 12, 12",
       "stats": [
         "50% increased Area-of-Effect of Hex Skills",
-        "20% increased Mana Reservation Efficiency of Curse Aura Skills",
-        "20% reduced Mana Cost of Curse Skills"
+        "20% increased Mana Cost Efficiency of Curse Skills",
+        "20% increased Mana Reservation Efficiency of Curse Aura Skills"
       ]
     },
     "Skull Cracking": {
@@ -2850,7 +2865,7 @@
       "recipe": "1, 8, 13",
       "stats": [
         "0.5% of Physical Attack Damage Leeched as Mana",
-        "15% reduced Mana Cost of Attacks"
+        "25% increased Cost Efficiency of Attacks"
       ]
     },
     "Spirit Void": {
@@ -3022,7 +3037,7 @@
       "recipe": "7, 12, 13",
       "stats": [
         "gain 2 Mana per enemy Hit with Attacks",
-        "15% reduced Mana Cost of Attacks"
+        "25% increased Cost Efficiency of Attacks"
       ]
     },
     "Throatseeker": {
@@ -3035,7 +3050,7 @@
       "recipe": "11, 11, 11",
       "stats": [
         "10% increased maximum Life",
-        "6% reduced Cost of Skills"
+        "10% increased Cost Efficiency"
       ]
     },
     "Titanic Impacts": {
@@ -3197,9 +3212,9 @@
     "Versatility": {
       "recipe": "4, 4, 11",
       "stats": [
-        "15% increased Global Accuracy",
         "5% increased Movement Speed",
-        "+20 to Dexterity and Intelligence"
+        "+20 to Dexterity and Intelligence",
+        "15% increased Accuracy"
       ]
     },
     "Veteran Soldier": {
@@ -3316,8 +3331,8 @@
       "recipe": "2, 3, 5",
       "stats": [
         "+100 to Accuracy",
-        "20% increased Global Accuracy",
-        "+10% to all Elemental Resistances"
+        "+10% to all Elemental Resistances",
+        "20% increased Accuracy"
       ]
     },
     "Whirling Barrier": {

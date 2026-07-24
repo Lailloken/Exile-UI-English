@@ -1,5 +1,5 @@
 {
-  "_timestamp": "2026-03-06, 09:30 (utc)",
+  "_timestamp": "2026-07-22, 05:30 (utc)",
   "aisling": {
     "rewards": {
       "transportation": [
@@ -303,11 +303,11 @@
   "vagan": {
     "rewards": {
       "transportation": [
-        "incubators",
-        "weapon"
+        "trarthan scarabs",
+        "trarthan scarab"
       ],
       "fortification": [
-        "accelerates\nincubators",
+        "trapped chest:\nenshrouded uniques",
         "trapped chest:\nweapons"
       ],
       "research": [
@@ -327,7 +327,7 @@
         "apply chromatics:\n10 / 15 / 20 / 30"
       ],
       "fortification": [
-        "apply chromes / jeweller's /\nfusings to your item",
+        "apply jeweller's / chromes /\nfusings to your item",
         "apply jeweller's:\n10 / 15 / 20 / 30"
       ],
       "research": [

@@ -293,6 +293,7 @@
 		global_hold_ctrl		=	"hold ctrl"
 		global_load			=	"load"
 		global_troubleshoot		=	"trouble-shooting"
+		global_flash			=	"flash"			;## as in flashing text (alternating color, brightness, etc.)
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -320,7 +321,7 @@
 		mechanic_purifier		=	"purifier"
 		mechanic_seer			=	"nameless seer"
 		mechanic_mist			=	"reflecting mist"
-		mechanic_infamous		=	"infamous mercenary"
+		mechanic_infamous		=	"infamous merc"
 		mechanic_graftblood		=	"high graftblood"
 
 
@@ -1136,7 +1137,7 @@
 		m_lvltracker_bandits		=	"oak"
 		m_lvltracker_treehotkey		=	"hotkey to close trees:"				;## optional setting for users who don't close the in-game tree with ESC
 		m_lvltracker_gemquests		=	"gem-quests"						;## quests that unlock gems
-		m_lvltracker_autotracking	=	"auto-tracking"
+		m_lvltracker_autotracking	=	"auto-track"
 
 
 

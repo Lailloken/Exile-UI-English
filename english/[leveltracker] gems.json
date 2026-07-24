@@ -2040,6 +2040,22 @@
       }
     }
   },
+  "dark bargain": {
+    "attribute": 3,
+    "level": 28,
+    "quests": {
+      "a fixture of fate": {
+        "vendor": []
+      },
+      "sever the right hand": {
+        "vendor": [
+          "scion",
+          "shadow",
+          "witch"
+        ]
+      }
+    }
+  },
   "dark pact": {
     "attribute": 3,
     "level": 28,
@@ -2634,21 +2650,18 @@
       "a fixture of fate": {
         "vendor": []
       },
-      "enemy at the gate": {
-        "vendor": [
-          "templar"
-        ]
-      },
       "mercy mission": {
         "quest": [
           "witch",
           "shadow",
-          "scion"
+          "scion",
+          "templar"
         ],
         "vendor": [
           "scion",
           "shadow",
-          "witch"
+          "witch",
+          "templar"
         ]
       }
     }
@@ -3036,13 +3049,7 @@
           "shadow",
           "scion"
         ],
-        "vendor": [
-          "duelist",
-          "marauder",
-          "ranger",
-          "shadow",
-          "scion"
-        ]
+        "vendor": []
       }
     }
   },
@@ -3060,12 +3067,7 @@
           "shadow",
           "scion"
         ],
-        "vendor": [
-          "scion",
-          "shadow",
-          "templar",
-          "witch"
-        ]
+        "vendor": []
       }
     }
   },
@@ -5255,6 +5257,25 @@
           "ranger",
           "scion",
           "shadow"
+        ]
+      }
+    }
+  },
+  "mana-infused staff": {
+    "attribute": 3,
+    "level": 16,
+    "quests": {
+      "a fixture of fate": {
+        "vendor": []
+      },
+      "intruders in black": {
+        "quest": [
+          "templar"
+        ],
+        "vendor": [
+          "shadow",
+          "templar",
+          "witch"
         ]
       }
     }
