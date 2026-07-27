@@ -91,12 +91,12 @@ ID	=	000
 
 [Rare Monsters have Elemental Thorns reflecting Elemental Damage]
 type	=	monsters
-text	=	ele reflect:
+text	=	rares reflect ele:
 ID	=	001
 
 [Rare Monsters have Physical Thorns reflecting Physical Damage]
 type	=	monsters
-text	=	phys reflect:
+text	=	rares reflect phys:
 ID	=	002
 
 [players cannot regenerate life, mana or energy shield]
