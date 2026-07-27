@@ -89,14 +89,14 @@ type	=	area
 text	=	unknown mods:
 ID	=	000
 
-[monsters reflect # of elemental damage]
+[Rare Monsters have Elemental Thorns reflecting Elemental Damage]
 type	=	monsters
-text	=	ele reflect: %
+text	=	ele reflect:
 ID	=	001
 
-[monsters reflect # of physical damage]
+[Rare Monsters have Physical Thorns reflecting Physical Damage]
 type	=	monsters
-text	=	phys reflect: %
+text	=	phys reflect:
 ID	=	002
 
 [players cannot regenerate life, mana or energy shield]

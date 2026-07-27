@@ -735,7 +735,6 @@
     ],
     [
       "leaguestart: find the (img:craft)",
-      "(hint)__ (color:red)3.29:_changed/removed?",
       "reach areaid1_4_3_2 ;; the mines (2)"
     ],
     [
@@ -775,7 +774,7 @@
     ],
     [
       "kill kaom (quest:(eye)) || (img:portal) areaid1_4_town ;; highgate",
-      "(hint)__ if right bulge, go (img:7). else (img:1)"
+      "(hint)__ (color:ff00ff)if right bulge, go (img:7). (color:ff00ff)else (img:1)"
     ],
     [
       "(img:waypoint) to areaid1_4_3_3 ;; crystal veins",
@@ -808,6 +807,7 @@
   ],
   [
     [
+      "leaguestart: optional: 5l body: (color:cc99ff)league",
       "follow (img:5) edge, kill overseer",
       "(hint)_ - find corridor with gallows",
       "(hint)_ - loop clockwise to reach arena:him",
@@ -842,7 +842,7 @@
     ],
     [
       "go (img:5), loop clockwise",
-      "go (img:7) areaid1_5_6 ;; the ossuary"
+      "go (img:7) to areaid1_5_6 ;; the ossuary"
     ],
     [
       "find (img:quest) (quest:sign_of_purity)",
@@ -885,9 +885,9 @@
     [
       "go (img:2), kill queen (quest:(eye))",
       "(hint)__ hit zone (color:cc99ff)edge? follow it",
-      "enter areaid2_6_5 ;; karui fortress",
-      "(hint)_ - if (color:cc99ff)edge went (img:1), go (img:5)",
-      "(hint)_ - otherwise go (img:7)"
+      "enter (img:quest) areaid2_6_5 ;; karui fortress",
+      "(hint)_ - (color:ff00ff)if (color:cc99ff)edge went (img:1), go (img:5)",
+      "(hint)_ - (color:ff00ff)otherwise go (img:7)"
     ],
     [
       "optional: tattoo(s): follow water (img:7)",
@@ -921,6 +921,7 @@
         "yes"
       ],
       "lines": [
+        "optional: 5l body: (color:cc99ff)league",
         "kill everything",
         "(color:cc99ff)relog: areaid2_6_town ;; lioneye's watch"
       ]
@@ -939,8 +940,8 @@
     },
     [
       "check (img:waypoint) pos. relative to (img:arena)",
-      "(hint)_ - if above: go far (img:1), then (img:7)",
-      "(hint)_ - if left: go far (img:5), then (img:7)",
+      "(hint)_ - (color:ff00ff)if above: go far (img:1), then (img:7)",
+      "(hint)_ - (color:ff00ff)if left: go far (img:5), then (img:7)",
       "enter areaid2_6_7_1 ;; lower prison"
     ],
     [
@@ -1168,8 +1169,7 @@
       "(hint)__ follow channel upstream"
     ],
     [
-      "follow (img:0) edge, get (img:waypoint)",
-      "(hint)__ (color:red)3.29:_will_be_farther (img:7)",
+      "follow (img:0) edge, then go (img:7)",
       "(img:waypoint) to areaid2_8_town (img:town) ;; sarn encampment"
     ],
     [
@@ -1402,7 +1402,7 @@
       ],
       "lines": [
         "optional: (color:cc99ff)10m_gem_exp (facetor's lens):",
-        "(hint)__ switch on (img:0) wall in trial",
+        "(hint)__ corner-switch at start of trial",
         "follow edge, complete (img:lab) trial",
         "(hint)__ (img:craft) + (img:lab) are near (img:quest) (quest:elixir) (<2_respecs>)",
         "(color:cc99ff)relog: areaid2_10_town ;; oriath docks"
