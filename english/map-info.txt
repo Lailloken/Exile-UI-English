@@ -754,6 +754,11 @@ type	=	monsters
 text	=	grasping vines
 ID	=	192
 
+[monsters inflict # grasping vine on hit]
+type	=	monsters
+text	=	grasping vines
+ID	=	192
+
 [monsters have # chance to block attack damage]
 type	=	monsters
 text	=	attack-block: +%
@@ -1033,3 +1038,13 @@ ID	=	318
 type	=	expedition
 text	=	olroth (boss)
 ID	=	319
+
+[# increased Dead Man's Sulphur found in this Area]
+type	=	area
+text	=	sulphur: +%
+ID	=	400
+
+[# Monster Elemental Resistances]
+type	=	monsters
+text	=	ele res: +%
+ID	=	401

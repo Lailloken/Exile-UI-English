@@ -115,6 +115,9 @@
 		global_opacity			=	"opacity:"
 		global_zoom			=	"zoom:"
 		global_tier			=	"tier"
+		global_tiers			=	"t1"
+		global_tiers			=	"t2"
+		global_tiers			=	"t3"
 		global_ilvl			=	"ilvl"
 		global_name			=	"name:"
 		global_type			=	"type:"
@@ -294,6 +297,9 @@
 		global_load			=	"load"
 		global_troubleshoot		=	"trouble-shooting"
 		global_flash			=	"flash"			;## as in flashing text (alternating color, brightness, etc.)
+		global_omnikey			=	"omni-key"
+		global_omnikey			=	"omni"
+		global_notification		=	"notification"
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -323,6 +329,7 @@
 		mechanic_mist			=	"reflecting mist"
 		mechanic_infamous		=	"infamous merc"
 		mechanic_graftblood		=	"high graftblood"
+		mechanic_hideout		=	"hideout"			;## refers to random hideout spawns in PoE1 maps
 
 
 
@@ -606,6 +613,8 @@
 		lootfilter_minsupportlevel	=	"min supp."								;## min level for support gems
 		lootfilter_socketables		=	"socketables"
 
+		lootfilter_notification		=	"sync lootfilter"							;## configurable reminder notification after X hours
+
 
 
 ;#####################################################
@@ -714,7 +723,7 @@
 		omnikey_copyfail		=	"clipboard-copy failed"
 		omnikey_escape			=	"(esc to exit)"
 		omnikey_scroll			=	"scrolling..."						;## as in scroll-wheel
-		omnikey_chromes		=	"click into the <total sockets>;field and press space"	;## refers to "total sockets" on the chromatic-calc website
+		omnikey_chromes		=	"paste the item data;into the first field"
 		omnikey_clustersearch	=	"press ctrl-f to highlight;the selected jewel type"
 		omnikey_labimport		=	"select lab difficulty"
 		omnikey_labimport		=	"right-click layout image"

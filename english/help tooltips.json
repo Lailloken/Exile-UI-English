@@ -734,6 +734,10 @@
       "when the editor is already open, the modifier-key is not required",
       "alternatively, you can open the editor via the menu-widget"
     ],
+    "lootfilter notification": [
+      "if you are using an online filter that is periodically updated, you can set up notification pop-ups as a reminder to regularly re-sync your modified filter",
+      "these pop-ups will be displayed whenever you enter a hideout and the last sync was more than x hours ago"
+    ],
     "macros animations": [
       "toggles menu-widget animations"
     ],
@@ -760,6 +764,9 @@
     ],
     "macros enable": [
       "click this button to toggle the command on/off"
+    ],
+    "macros boat": [
+      "the sovereign"
     ],
     "macros kingsmarch": [
       "kingsmarch"
@@ -850,10 +857,14 @@
       "when you leave a map, the tracker panel will flash and you'll have to click the timer to refresh kills",
       "you only have to refresh if you know you won't go back in, so ignore it otherwise"
     ],
+    "maptracker kill-tracker omni-key": [
+      "optionally, you can refresh the kill-count by pressing the omni-key while the panel is flashing",
+      "(/highlight)the kill-count will have priority, i.e. the first omni-key press after leaving a map cannot activate any other feature"
+    ],
     "maptracker mapinfo": [
       "map-mods from the <map-info> feature will be logged. (separate feature, has to be enabled and actively used)",
       [
-        "this also includes information such as:\nelder guardians, conquerors, type of maven invitation, blight(-ravaged), contract/blueprint"
+        "this also includes information such as:\nelder guardians, conquerors, originator, type of maven invitation, blight(-ravaged), contract/blueprint"
       ]
     ],
     "maptracker notes": [
@@ -933,11 +944,15 @@
     ],
     "map-events enable": [
       "displays notifications whenever certain events happen",
-      "examples: infamous mercenaries, graftblood (almost) full"
+      "examples: infamous mercenaries, claimable hideouts, graftblood (almost) full"
     ],
     "map-events enable event": [
       "click to enable/disable this event",
       "right-click to activate a test notification"
+    ],
+    "map-events hideout tiers": [
+      "you can filter hideouts by rarity:\nextremely rare | very rare | rare",
+      "(/highlight)hideout notifications are shown 10 seconds after entering the map to prevent abuse"
     ],
     "map-events position": [
       "the notification will be docked to one of the client's edges"

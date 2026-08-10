@@ -94,7 +94,8 @@
 		maps_atziri			=	"uber atziri"
 		maps_sirus			=	"sirus"
 		maps_cortex			=	"cortex"
-		maps_saresh			=	"saresh (black barya)"		
+		maps_saresh			=	"saresh (black barya)"
+		maps_zorath			=	"zorath (abyss)"
 
 
 		maps_ritualboss		=	"king in the mists"		;## PoE1 and PoE2
@@ -246,6 +247,8 @@
 		items_uncut_gem		=	"Uncut Support Gem"
 		items_uncut_gem		=	"Uncut Spirit Gem"
 
+		items_merc_warrant		=	"Mercenary Warrant"					;## PoE1 only
+
 ;## these strings are displayed in the in-game tooltip when hovering over an item
 		items_unidentified		=	"Unidentified"						;## PoE1 and PoE2 (whole block)
 		items_unmodifiable		=	"Unmodifiable"						;## example: memories (atlas item), sanctum relics
@@ -281,6 +284,7 @@
 		items_mapquantity		=	"Item Quantity:"				;## PoE1 and PoE2
 		items_maprarity		=	"Item Rarity:"
 		items_mappacksize		=	"Monster Pack Size:"
+		items_mappacksize		=	"Pack Size:"					;## PoE2-version of the string
 
 
 		items_mapmaps			=	"More Maps:"					;## PoE1 only (whole block), T17 maps received various multipliers in 3.24.1
@@ -306,6 +310,9 @@
 		items_veritania		=	"Veritania"
 
 
+		items_originator		=	"Area is Influenced by the Originator's Memories"
+
+
 ;## these strings are displayed in the in-game tooltip when hovering over an item and holding the hotkey for advanced item descriptions (usually ALT)
 		items_prefix			=	"Prefix Modifier"
 		items_prefix_allowed	=	"Prefix Modifier# allowed"	;## implicit that modifies affix-counts (it's important to place the placeholder in a way that matches singular and plural forms)
@@ -326,6 +333,9 @@
 		items_implicit_tiers	=	"Perfect"
 		items_tier			=	"Tier:"					;## this refers to modifier tiers, usually displayed as "(Tier: X)"
 		items_unscalable		=	"Unscalable Value"			;## this is displayed next to certain modifiers, e.g. "Hits cannot be evaded", "Socketed gems are supported by XYZ"
+
+		items_merc_build		=	"Build:"
+		items_merc_level		=	"Mercenary Level:"
 
 
 ;## these strings are displayed in the item-text when copying advanced item descriptions into clipboard (usually ALT + CTRL + C)

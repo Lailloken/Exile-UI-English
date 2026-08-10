@@ -138,7 +138,8 @@
       "follow wall to areaid1_1_9 ;; ship graveyard"
     ],
     [
-      "kill fairgraves (quest:(allflame))",
+      "leaguestart: kill fairgraves (quest:(allflame))",
+      "twinkrun: kill fairgraves",
       "reach areaid1_1_11_1 ;; cavern of wrath",
       "(img:waypoint) to areaid1_1_town (img:town) ;; lioneye's watch"
     ],
