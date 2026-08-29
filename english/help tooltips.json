@@ -21,6 +21,9 @@
     "selection donations": [
       "donations"
     ],
+    "slider general": [
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
+    ],
     "multi-threading multi": [
       "the tool will use two threads/processes, which improves performance and enables advanced features",
       "examples:\nclone-frames fps options"
@@ -35,7 +38,8 @@
     ],
     "kill time": [
       "the tool will close automatically if it can't find any open game clients",
-      "0: don't close automatically\nX: wait X minutes before closing"
+      "0: don't close automatically\nX: wait X minutes before closing",
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "browser features": [
       "enables additional features when accessing 3rd-party websites via the tool",
@@ -57,7 +61,7 @@
       "– and + can be held down, the middle button resets the size"
     ],
     "animations": [
-      "toggles animations/transitions used in some menus and interfaces"
+      "animations/transitions used in some menus and interfaces"
     ],
     "generic color": [
       "click to open the color-palette, right click to reset"
@@ -99,7 +103,7 @@
     ],
     "league selection": [
       "select the league you're currently playing in",
-      "this information can be used in various features for price-checking and logging purposes"
+      "this information can be used in various features for price-checking and logging"
     ],
     "league selection other": [
       "this is a global setting: click this button to open the <general> tab and select your current league"
@@ -324,6 +328,9 @@
     "donations howto": [
       "github thread with more info"
     ],
+    "donations kofi": [
+      "ko-fi.com/lailloken"
+    ],
     "exchange enable": [
       "ratio calculator, small ux improvements, trade logging, and balance tracking for the in-game currency exchange",
       "(/highlight)requires the <currency exchange> and <inventory> checks to be set up correctly in the <screen-checks> section",
@@ -346,14 +353,14 @@
       "trade logs will show names in addition to the base type"
     ],
     "exchange async minchange": [
-      "the first repricing option will be x% lower than the current price",
-      "the other options will use 5% increments"
+      "the first repricing option will be x% lower than the current price, and the other options will use 5% increments",
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "hotkeys ingame-keybinds": [
       "to avoid conflicts between custom in-game keybinds and the tool's hotkeys:\n- tick anything that applies to you\n- provide alternative keys when asked to"
     ],
     "hotkeys formatting": [
-      "for special keys, check the links above to find proper names and formatting",
+      "for special keys, check the ahk-link above to find the proper names",
       "(/highlight)don't use modifier-keys, the 3 main mouse-buttons, or space"
     ],
     "hotkeys modifiers": [
@@ -427,7 +434,7 @@
       "example, t2 movement speed on ilvl 74 boots:\n30%(10-30) inc. movement speed"
     ],
     "iteminfo quality scaling": [
-      "shows a calculation of what damage/defenses would look like if the item had 20% quality and one or more iron runes"
+      "shows a calculation of theoretical damage/defense values if the item had 20% quality and one or more iron runes"
     ],
     "iteminfo shift-click": [
       "automatically refreshes/activates the tooltip when applying currency to items via shift-click",
@@ -715,7 +722,7 @@
       "(/highlight)make sure the in-game chat box is closed but accessible"
     ],
     "lootfilter filter-tester presets": [
-      "pick a preset and fine-tune the value by using the slider, then click <test> below"
+      "pick a preset and adjust its value, then click <test> below"
     ],
     "lootfilter filter-tester restore": [
       "(/highlight)click this button after you're done testing: it re-applies your previous in-game filter",
@@ -725,12 +732,16 @@
       "pick a sound effect from the list to apply it to scrolls of wisdom and hear it in game",
       "(/highlight)make sure the in-game chat box is closed but accessible"
     ],
+    "lootfilter filter-tester sound pick": [
+      "pick a sound to hear it in game (on the dropped wisdom scroll)",
+      "(/highlight)make sure the in-game chat box is closed but accessible"
+    ],
     "lootfilter filter-tester sound tags": [
       "optionally, you can tag/rename sound effects 1-16 to make them easier to remember",
       "type in a tag/name, then press <enter>"
     ],
     "lootfilter modifier keys": [
-      "hover over items, hold down the modifier-key, and press the the <omni-key> to open the editor for that item",
+      "hover over items, hold down the modifier-key, and press the <omni-key> to open the editor for that item",
       "when the editor is already open, the modifier-key is not required",
       "alternatively, you can open the editor via the menu-widget"
     ],
@@ -764,6 +775,9 @@
     ],
     "macros enable": [
       "click this button to toggle the command on/off"
+    ],
+    "macros widget size": [
+      "this is the current size of the menu-widget buttons"
     ],
     "macros boat": [
       "the sovereign"
@@ -820,7 +834,7 @@
       "hides the panel instead of just graying it out whenever tracking is paused (after right-clicking the button in the menu-widget)"
     ],
     "maptracker mechanics": [
-      "logs certain mechanics you encounter while mapping"
+      "logs certain mechanics/content you encounter while mapping"
     ],
     "maptracker dialogue tracking": [
       "these mechanics can be tracked automatically via in-game dialogue",
@@ -845,7 +859,7 @@
     ],
     "maptracker portal hotkey": [
       "enter the in-game hotkey for <portal scroll>",
-      "check the links above if it uses special keys/combinations"
+      "for special keys, check the ahk-link above to find the proper names"
     ],
     "maptracker loot-tracker": [
       "items you ctrl-click into the stash will be logged",
@@ -916,14 +930,14 @@
       "type in map-mods (in-game wording) and press <enter> to list them below"
     ],
     "mapinfo roll highlight": [
-      "lets you highlight map rolls (quant, rarity, etc.) if they're above certain values"
+      "highlights map rolls (quant, rarity, etc.) if they're above certain values"
     ],
     "mapinfo roll colors": [
       "roll highlighting currently looks like this",
       "click the buttons on the right to open the palette, right-click to reset to default"
     ],
     "mapinfo requirements": [
-      "specify desired minimum values for each roll",
+      "specify desired min values for each roll",
       [
         "quantity, rarity, pack size, maps, scarabs, currency",
         "quantity, rarity, pack size, waystones"
@@ -935,12 +949,16 @@
       "use the mod search to find mods, click the – and + buttons to (un)pin mods for quick access"
     ],
     "mapinfo reset tiers": [
-      "long-click to reset every map mod tier to default (white, not crossed out)",
+      "long-click to reset every map-mod tier to default (white, not crossed out)",
       "(/highlight)this affects every single mod, not just the pinned ones below"
     ],
     "alarm enable": [
       "timer-widget with alarm/countdown and stopwatch functionality",
       "hidden by default: hold down the <widget-key> to access it"
+    ],
+    "map-events duration": [
+      "the notification will be on screen for x seconds",
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "map-events enable": [
       "displays notifications whenever certain events happen",
@@ -963,7 +981,7 @@
     ],
     "notepad default color": [
       "specify the default colors for widgets of new tabs",
-      "these can be customized for each tab afterwards"
+      "these can be customized for individual tabs afterwards"
     ],
     "notepad opacity": [
       "the opacity of inactive widgets (i.e. when not holding down the <widget-key>)",
@@ -973,36 +991,37 @@
       "simple lab layout overlay and tracker for casual runs",
       "while in lab or the aspirants' plaza, hold down the <widget-key> to activate the overlay"
     ],
-    "ocr enable": [
-      "screen-reading feature that scans the screen and displays certain information/text in customizable & compact tooltips",
-      "currently supported: eldritch altars, vaal side areas"
+    "TLDR enable": [
+      "scans the screen and displays certain information in customizable & compact tooltips",
+      "currently supported: eldritch altars, vaal side areas",
+      "(/highlight)uses built-in windows functionality. if the game's language is not available on your windows install, you will have to manually add it as a secondary language"
     ],
-    "ocr compatibility": [
-      "screen-reading feature that scans the screen and displays certain information/text in customizable & compact tooltips",
-      "a compatibility test has to be done before this feature can be enabled",
-      "open the character-stats screen, then click this checkbox to open the windows snipping tool",
-      "use it to snip 4 to 5 lines of text from the character-stats"
-    ],
-    "ocr colors": [
+    "TLDR colors": [
       "customize the color patterns used to highlight specific mods/rewards"
     ],
-    "ocr debug": [
-      "holding down the right crtl-key while scanning the screen will open a window that displays the screen-cap as well as the text the tool was able to read from it"
+    "TLDR debug": [
+      "hold down <alt> while scanning to open a window that displays the screen-cap and scan result"
     ],
-    "ocr z hotkey": [
-      "type in the in-game hotkey for <toggle highlighting>",
-      "check the links above if it uses special keys/combinations"
+    "TLDR z hotkey": [
+      "enter the in-game hotkey for <toggle highlighting>",
+      "for special keys, check the ahk-link above to find the proper names"
     ],
-    "ocr hotkey": [
-      "type in the hotkey you want to use to activate this feature",
-      "don't bind it to modifier-keys or keys used for chatting in order to prevent accidentally activating the feature",
-      "check the links above if you want to use special keys/combinations"
+    "TLDR hotkey": [
+      "enter the hotkey you want to use to activate this feature",
+      "don't bind it to modifier-keys or keys used for chatting",
+      "for special keys, check the ahk-link above to find the proper names"
+    ],
+    "TLDR hotkey separate": [
+      "the feature will be activated by pressing a separate hotkey"
+    ],
+    "TLDR hotkey shared": [
+      "the feature will be activated by holding down the in-game hotkey that toggles loot visibility (default: z)"
     ],
     "runeshaping auto-correct input": [
       "type in one or more (comma-separated) strings that need to be replaced because of recurring ocr inaccuracies"
     ],
     "runeshaping auto-correct output": [
-      "type in the string that replaces the one(s) on the left",
+      "enter the string that replaces the one(s) on the left",
       "press <enter> to save your edits"
     ],
     "runeshaping color high": [
@@ -1160,7 +1179,7 @@
     ],
     "stash history": [
       "shows an additional bar-chart with an item's price history for this week",
-      "this will be shown next to conversion rates when hovering over a highlighted item-slot",
+      "this will be shown next to conversion rates when hovering over price tags",
       "it's a timeline with bars that each represent a day and display the change in price compared to the first day"
     ],
     "stash global profiles": [
@@ -1221,7 +1240,7 @@
     "statlas enable": [
       "atlas feature that displays various information about maps on the atlas",
       "hold down the <omni-key> over maps on the atlas to activate the overlay",
-      "(/highlight)requires the english language pack. if your system is not english, you can add it as a secondary language in the windows settings.",
+      "(/highlight)uses built-in windows functionality. if the game's language is not available on your windows install, you will have to manually add it as a secondary language",
       "(/highlight)requires the <atlas> screen-check to be set up correctly in the <screen-checks> section"
     ],
     "statlas maptracker": [
@@ -1678,6 +1697,9 @@
       "example: if your cut-off is 1 and an item is worth 0.6, it will be hidden, but stacks of 2+ will be shown",
       "(/highlight)these rules max out at stack sizes of 6 and have 10% leeway"
     ],
+    "edit": [
+      "edit this tier's presentation and/or conditions"
+    ],
     "expand": [
       "expand every section that is currently collapsed"
     ],
@@ -1703,8 +1725,9 @@
       "click this label to browse the corresponding section in the filter"
     ],
     "global setting flasks toggles": [
-      "0: use base filter's rules",
-      "x: hide flasks below x% quality"
+      "0: use base filter rules",
+      "x: hide flasks below x% quality",
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "global setting gems": [
       [
@@ -1717,13 +1740,14 @@
       "click this label to browse the corresponding section in the filter"
     ],
     "global setting gems toggles": [
-      "0: use base filter's rules",
+      "0: use base filter rules",
       [
         "x: hide gems below level x or x% quality",
         "x: hide gems below level x"
       ],
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust",
       [
-        "max out the sliders to hide every leveled/quality regular gem"
+        "max out the values to hide every leveled/quality regular gem"
       ]
     ],
     "global setting info": [
@@ -1735,16 +1759,17 @@
       "click this label to browse the corresponding section in the filter"
     ],
     "global setting maps toggles": [
-      "0: use base filter's rules",
+      "0: use base filter rules",
       "x: hide maps below tier x",
-      "17: hide all regular maps"
+      "17: hide all regular maps",
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "global setting sockets 2": [
       "lets you set an item-size cut-off for socketed gear (salvage bench: artificer's orb)",
       "click this label to browse the corresponding section in the filter"
     ],
     "global setting sockets toggles": [
-      "off: use base filter's rules",
+      "off: use base filter rules",
       "none: don't highlight socketed gear",
       "small: only highlight small items",
       "all: highlight every socketed item"
@@ -1755,9 +1780,10 @@
       "click this label to browse the corresponding section in the filter"
     ],
     "global setting strands toggles": [
-      "0: use base filter's rules",
+      "0: use base filter rules",
       "x (high): items with x or more strands have extra highlighting\nx (minimum): items with x or more strands will be highlighted",
-      "max out the <minimum> slider to only highlight high-strand items, or max both to ignore strands as a highlighting aspect."
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust",
+      "max out the <minimum> slider to only highlight high-strand items, or max both to ignore strands as a highlighting aspect"
     ],
     "global setting unavailable": [
       "the selected filter has an unexpected structure: this quick-setting cannot be applied"
@@ -1767,12 +1793,12 @@
       "click this label to open the settings menu and adjust presets i to iii"
     ],
     "global setting visuals toggles": [
-      "off: use base filter's presentation",
+      "off: use base filter presentation",
       "i-iii: use a fixed value for every item"
     ],
     "home button": [
       "open the main/home screen with global settings",
-      "you can also middle click while hovering over the editor"
+      "alternatively, you can middle click while hovering over the editor"
     ],
     "list reload": [
       "refresh the list of local copies of your online filters",
@@ -1812,8 +1838,10 @@
     ],
     "tiers": [
       "these sections show how types are further divided into tiers",
-      "click this bar to collapse the tier, right-click to access tier customization",
       "click items for more options, right-click them to start a global search"
+    ],
+    "tiers collapse": [
+      "collapse/expand this tier"
     ],
     "rollback": [
       "click this box to browse the tier that was modified",
@@ -1825,7 +1853,10 @@
     ],
     "search history": [
       "lets you go back and forth in your search/browse history",
-      "you can also scroll the mouse wheel while hovering over the editor"
+      "alternatively, you can scroll the mouse wheel while hovering over the editor"
+    ],
+    "slider general": [
+      "(/highlight)long-click, and move the cursor up/down or right/left to adjust"
     ],
     "sounds pick": [
       "select a sound effect for this rule",

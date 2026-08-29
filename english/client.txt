@@ -74,6 +74,7 @@
 ;## these strings will be used in the mapping-tracker to add more information to log-entries
 ;## these strings will be added, so instead of only displaying "bunker", the entry will read "heist: bunker"
 		maps_heist			=	"heist"				;## PoE1 only
+		maps_anomaly			=	"anomaly"
 		maps_logbook			=	"logbook"				;## PoE1 and PoE2
 		maps_delirium			=	"simulacrum"			;## PoE1 and PoE2
 		maps_boss				=	"boss"				;## PoE1 and PoE2

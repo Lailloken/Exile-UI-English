@@ -1004,15 +1004,15 @@
       "curse immune\nhex reflect",
       "monsters"
     ],
-    "monsters reflect of elemental damage": [
-      "ele reflect",
+    "rare monsters have elemental thorns reflecting elemental damage": [
+      "rares reflect ele",
       "monsters"
     ],
-    "monsters reflect of physical damage": [
-      "phys reflect",
+    "rare monsters have elemental thorns reflecting physical damage": [
+      "rares reflect phys",
       "monsters"
     ],
-    "more magic monsters": [
+    "increased magic monsters": [
       "extra magic",
       "monsters"
     ],

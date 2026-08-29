@@ -223,7 +223,7 @@
 		global_league_vaal		=	"vaal"
 		global_league_aldur		=	"aldur"
 		global_league_mirage	=	"mirage"
-		global_league_rota		=	"RotA event"
+		global_league_rites		=	"ritual event"
 		global_league_allflame	=	"allflame"
 		global_league_ssf		=	"ssf"
 		global_league_trade		=	"trade"
@@ -244,7 +244,7 @@
 		global_databaseinfo		=	"database information"
 		global_current			=	"current"
 		global_updatewait		=	"try again later"
-		global_duration		=	"duration (sec)"
+		global_duration		=	"duration"
 		global_position		=	"position"
 		global_exchange		=	"currency exchange"
 		global_timeunits		=	"minute#minutes#hour#hours#day#days#week#weeks"
@@ -300,6 +300,9 @@
 		global_omnikey			=	"omni-key"
 		global_omnikey			=	"omni"
 		global_notification		=	"notification"
+		global_shared			=	"shared"			;## e.g. shared hotkey
+		global_separate		=	"separate"
+		global_style			=	"style"
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -330,6 +333,10 @@
 		mechanic_infamous		=	"infamous merc"
 		mechanic_graftblood		=	"high graftblood"
 		mechanic_hideout		=	"hideout"			;## refers to random hideout spawns in PoE1 maps
+
+		msg_clientswitch		=	"switch clients?"	;## window text for when you switch between games while the tool is running
+		msg_clientswitch		=	"you have switched to a different game-client, do you want the tool to switch/restart as well?"
+		msg_clientswitch		=	"if not, launch the correct client and then click <no>"
 
 
 
@@ -1174,7 +1181,6 @@
 		m_maptracker_bosstags		=	"boss-tags"							;## adds a "boss:"-tag to logged map-runs
 		m_maptracker_character		=	"char/build"
 		m_maptracker_league			=	"league"
-		m_maptracker_mapcontent		=	"map content"
 		m_maptracker_dialogue		=	"dialogue tracking:"					;## tracking is done via in-game dialogue in the chat-box
 		m_maptracker_screen			=	"screen tracking:"						;## tracking is done via screen-reading
 		m_maptracker_portalreminder	=	"portal reminder:"
@@ -1246,7 +1252,7 @@
 ;## these strings are displayed/required in the "screen-checks" section of the settings menu
 		m_screen_pixel			=	"list of required pixel-checks:"
 		m_screen_image			=	"list of required image-checks:"
-		m_screen_inactive		=	"the features that are currently enabled do not require any further setup"
+		m_screen_inactive		=	"the features that are currently enabled don't require any setup"
 		m_screen_gamescreen		=	"infopanel"									;## refers to the small panel in the top-right corner that shows area-name, server, league, etc.
 		m_screen_close_button	=	"close button"
 		m_screen_instructions	=	"read the instructions on;the <info> button!"
@@ -1329,9 +1335,8 @@
 		m_ocr_error			=	"test requires at least 8 unique words"
 		m_ocr_error			=	"screen-cap too large"
 		m_ocr_finish			=	"press esc to finish setup"
-		m_ocr_hotkey			=	"<toggle highlighting> (in game):"
 		m_ocr_debug			=	"enable debug features"
-		m_ocr_unsupported		=	"720p and lower resolutions are not supported because screen-reading has a very high failure rate at low resolutions, making this feature almost unusable"
+		m_ocr_unsupported		=	"720p and lower resolutions are not supported because screen-reading has a very high failure rate at low resolutions, making this feature almost unusable."
 
 
 
