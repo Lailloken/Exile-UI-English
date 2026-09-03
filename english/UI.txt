@@ -709,6 +709,8 @@
 ;## these strings are displayed/required when using OCR features
 		ocr_notext			=	"couldn't find any text"
 		ocr_nousecase			=	"use-case unclear"		;## scanned text doesn't fit any use-case
+		ocr_debug				=	"trouble-shooting..."
+		ocr_closetooltip		=	"(press esc/hotkey)"
 		ocr_nocoords			=	"couldn't get coordinates"
 		ocr_erroraltar			=	"couldn't reliably read mods, retry"
 		ocr_vaalarea			=	"area"

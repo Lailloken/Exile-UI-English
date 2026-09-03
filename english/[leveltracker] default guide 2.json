@@ -6,25 +6,26 @@
     ],
     [
       "(color:red)info: optional rewards (img:exa) (img:skill) (img:rune) (img:jeweller)",
-      "(hint)__ to include them, enable (quest:optionals) toggle",
+      "(hint)_ - (quest:optionals) setting turns them on/off",
+      "(hint)_ - (color:red)0.5.5_event_may_have_diff_league_rewards",
       "how to: use world-map for guidance",
       "(img:quest_2) renly: (img:skill) || enter areaidg1_2 ;; clearfell"
     ],
     [
-      "optional: (img:skill) in (img:checkpoint) (color:cc99ff)camp",
-      "optional: (img:skill2) arena:boss in areaidg1_3, (img:support2) (img:quest_2) renly ;; mud burrow",
-      "leaguestart: (img:quest_2) farrow: clear the (color:cc99ff)remnant",
-      "kill (img:checkpoint) beira || enter (img:checkpoint) areaidg1_4 ;; the grelwood"
+      "optional: (img:skill) in (img:checkpoint) (color:cc99ff)mysterious_camp",
+      "optional: (img:skill2) arena:devourer in areaidg1_3 ;; mud burrow",
+      "(hint)__ (img:support2) from (img:quest_2) renly (reward)",
+      "kill (img:checkpoint) beira || enter areaidg1_4 ;; the grelwood"
     ],
     [
-      "optional: ward rune: (color:cc99ff)league",
-      "optional: (img:flasks) + (img:support) <witch>: (img:checkpoint) (color:cc99ff)hut || (img:skill) arena:bramble",
+      "optional: ward rune: (color:cc99ff)league || (img:skill) arena:bramble",
+      "optional: flasks + (img:support) <witch> in (img:checkpoint) (color:cc99ff)hut",
       "(color:ff00ff)follow_2: glow-roots to get (img:waypoint) ,",
-      "(hint)__ (color:aqua)mushrooms to (img:in-out2) areaidg1_6: (img:waypoint) ;; the grim tangle",
-      "follow river upstream: (img:checkpoint) areaidg1_5 ;; the red vale"
+      "(hint)_ (color:aqua)mushrooms to (img:in-out2) areaidg1_6: (img:waypoint) ;; the grim tangle",
+      "follow (color:cc99ff)river upstream: areaidg1_5 ;; the red vale"
     ],
     [
-      "martial weapons: (color:cc99ff)arms_racks",
+      "optional: atk weapons in (color:cc99ff)refined_arms",
       "clear (quest:3_obelisks) for (quest:3_runes)",
       "(img:portal) to areaidg1_town ;; clearfell encampment"
     ],
@@ -43,41 +44,36 @@
     ],
     [
       "optional: (img:skill2) (color:cc99ff)league || (img:support) arena:rotten_druid",
-      "leaguestart: find (img:checkpoint) (color:cc99ff)runestones: (img:quest_2) farrow",
-      "enter (img:checkpoint) areaidg1_7 ;; cemetery of the eternals"
+      "reach areaidg1_7 ;; cemetery of the eternals"
     ],
     [
       "activate the (img:waypoint) and (img:checkpoint)",
       "optional: (img:ring) in (img:checkpoint) (color:cc99ff)ancient_ruin (edge)",
-      "enter (img:checkpoint) areaidg1_9 ;; tomb of the consort"
+      "enter areaidg1_9 ;; tomb of the consort"
     ],
     [
       "optional: (img:artificer) (color:cc99ff)league",
       "optional: (img:support) <knight> in (img:checkpoint) (color:cc99ff)treasure",
-      "kill (img:checkpoint) asinia for (quest:key_piece)",
+      "kill (img:checkpoint) asinia (quest:(key_piece))",
       "enter areaidg1_7 ;; cemetery of the eternals"
     ],
     [
       "optional: (img:ring) in (img:checkpoint) (color:cc99ff)ancient_ruin (edge)",
-      "enter (img:checkpoint) areaidg1_8 ;; mausoleum of the praetor"
+      "enter areaidg1_8 ;; mausoleum of the praetor"
     ],
     [
-      "optional: (img:regal) (color:cc99ff)league",
-      "kill (img:checkpoint) draven for (quest:key_piece)",
+      "optional: (img:regal) (color:cc99ff)league || (img:support) in (color:cc99ff)forg._riches",
+      "kill (img:checkpoint) draven (quest:(key_piece))",
       "enter areaidg1_7 ;; cemetery of the eternals"
     ],
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "(img:checkpoint) -travel to (img:waypoint), open (color:cc99ff)gate",
-        "(hint)__ when it opens, (color:cc99ff)esc:_respawn",
-        "kill lachlann for (quest:ring)",
-        "(img:portal) areaidg1_town ;; clearfell encampment"
-      ]
-    },
+    [
+      "(img:checkpoint) -travel to (img:waypoint), open (color:cc99ff)gate",
+      "(hint)__ when it opens, (color:cc99ff)esc:_respawn",
+      "leaguestart: kill lachlann (quest:(ring))",
+      "leaguestart: (img:portal) areaidg1_town ;; clearfell encampment",
+      "twinkrun: kill lachlann || leave (quest:ring)",
+      "twinkrun: enter areaidg1_11 ;; hunting grounds"
+    ],
     {
       "condition": [
         "league-start",
@@ -89,51 +85,34 @@
         "(img:waypoint) to areaidg1_11 ;; hunting grounds"
       ]
     },
-    {
-      "condition": [
-        "league-start",
-        "no"
-      ],
-      "lines": [
-        "(img:checkpoint) -travel to (img:waypoint), open (color:cc99ff)gate",
-        "(hint)__ when it opens, (color:cc99ff)esc:_respawn",
-        "kill lachlann || leave (quest:ring)",
-        "enter areaidg1_11 ;; hunting grounds"
-      ]
-    },
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestones",
-      "optional: (img:exa) (color:cc99ff)league || (img:support) <dryad> (edge)",
-      "clear (img:checkpoint) (color:cc99ff)ritual (near center)",
-      "(hint)__ on the way, look for (color:aqua)tracks or (color:cc99ff)road",
-      "follow cleared ritual: areaidg1_12 ;; freythorn",
-      "(hint)__ keep looking for (color:aqua)tracks or (color:cc99ff)road"
+      "optional: (img:exa) (color:cc99ff)league || (img:support) <dryad> || (img:skill2) ritual",
+      "(color:ff00ff)2_tasks along the edge:",
+      "(hint)_ - (img:in-out2) areaidg1_13_1: (img:waypoint) ;; ogham farmlands",
+      "(hint)_ - kill (img:checkpoint) crowbell (quest:(book))",
+      "follow edge: areaidg1_12 ;; freythorn"
     ],
     [
-      "(img:waypoint) to areaidg1_11 ;; hunting grounds"
+      "(img:waypoint) to areaidg1_13_1 ;; ogham farmlands"
     ],
     [
-      "(img:checkpoint) to (color:cc99ff)ritual, (color:ff00ff)find/follow_2:",
-      "(hint)_ - (color:aqua)tracks: kill (img:checkpoint) crowbell (quest:(book))",
-      "(hint)_ - road+sign: get (img:checkpoint) at the end",
-      "enter (img:checkpoint) areaidg1_13_1 ;; ogham farmlands"
+      "road points to (img:checkpoint) (color:cc99ff)home (quest:(lute))",
+      "(hint)__ then: follow one of the roads",
+      "optional: (img:skill) in (img:checkpoint) (color:cc99ff)crop_circle",
+      "follow road: areaidg1_13_2 ;; ogham village"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestones",
-      "optional: (img:skill2) in (img:checkpoint) (color:cc99ff)crop_circle",
-      "road leads straight to (img:checkpoint) (color:cc99ff)hut (quest:(lute))",
-      "find & enter (img:checkpoint) areaidg1_13_2 ;; ogham village",
-      "(hint)__ one of the roads after (color:cc99ff)hut leads there"
+      "(img:waypoint) to areaidg1_town (img:town2) ;; clearfell encampment"
     ],
     [
-      "(img:waypoint) to areaidg1_town (img:town) ;; clearfell encampment",
+      "(img:quest_2) una: (quest:book)",
       "leaguestart: optional: check vendors",
-      "(img:quest_2) una: (quest:book) || (img:waypoint) to areaidg1_12 ;; freythorn"
+      "(img:waypoint) to areaidg1_12 ;; freythorn"
     ],
     [
       "optional: (img:support) (color:cc99ff)league",
       "find & clear (color:cc99ff)3 (img:checkpoint) (color:cc99ff)rituals",
-      "(hint)__ cleared rituals point to the next",
+      "(hint)__ cleared rituals point to next",
       "clear (img:checkpoint) arena:boss_ritual (quest:(skull))",
       "leaguestart: (img:portal) to areaidg1_town ;; clearfell encampment",
       "twinkrun: (img:waypoint) to areaidg1_13_2 ;; ogham village"
@@ -145,27 +124,7 @@
       ],
       "lines": [
         "(img:quest_2) finn: (color:cc99ff)ele-res_charm",
-        "(img:waypoint) to areaidg1_4 ;; the grelwood"
-      ]
-    },
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "(img:quest_2) farrow: enter (color:cc99ff)lost_catacombs",
-        "enter (img:checkpoint) (color:cc99ff)runic_vault || (img:quest_2) farrow",
-        "(img:portal) to areaidg1_town ;; clearfell encampment"
-      ]
-    },
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "(img:quest_2) farrow",
+        "optional: check vendors",
         "(img:waypoint) to areaidg1_13_2 ;; ogham village"
       ]
     },
@@ -183,14 +142,16 @@
         "yes"
       ],
       "lines": [
-        "(img:quest_2) leitis: (img:skill) || (img:quest_2) renly: (img:rune) + (quest:bench)",
+        "(img:quest_2) leitis: (img:skill)",
+        "(img:quest_2) renly: (img:rune) + (quest:bench)",
         "optional: check vendors",
         "(img:waypoint) to areaidg1_14 ;; manor ramparts"
       ]
     },
     [
-      "optional: (img:skill2) (color:cc99ff)league || (img:support) in (img:checkpoint) (color:cc99ff)gallows (edge)",
-      "inner edge leads to areaidg1_15 ;; ogham manor"
+      "optional: (img:skill2) (color:cc99ff)league",
+      "optional: (img:support) in (img:checkpoint) (color:cc99ff)gallows (outer edge)",
+      "follow inner edge: areaidg1_15 ;; ogham manor"
     ],
     [
       "optional: alch orb: (color:cc99ff)league",
@@ -202,15 +163,15 @@
     [
       "leaguestart: optional: check vendors",
       "twinkrun: (img:quest_2) leitis: (img:skill)",
-      "twinkrun: optional: (img:quest_2) renly: (img:rune)",
+      "twinkrun: optional: (img:quest_2) renly: trade (img:b-rune) for (img:rune)",
       "(img:quest_2) hooded one: areaidg2_1 ;; vastiri outskirts"
     ]
   ],
   [
     [
       "optional: (img:spirit2) (color:cc99ff)league || (img:support2) in (img:checkpoint) (color:cc99ff)raider_camp",
-      "find & kill (img:checkpoint) rathbreaker || (img:portal) out",
-      "(hint)__ search for bone passage along edge",
+      "kill (img:checkpoint) rathbreaker || (img:portal) out",
+      "(hint)__ follow (color:aqua)spear-lines to bone passage",
       "(img:quest_2) zarka: (img:skill) || enter areaidg2_town ;; the ardura caravan"
     ],
     [
@@ -221,12 +182,11 @@
     ],
     [
       "optional: (img:artificer) in (img:checkpoint) (color:cc99ff)war_cache (edge)",
-      "reach (img:checkpoint) areaidg2_10_2 ;; mawdun mine"
+      "reach areaidg2_10_2 ;; mawdun mine"
     ],
     [
       "optional: (img:exa) (color:cc99ff)league",
-      "find & kill (img:checkpoint) rudja",
-      "(hint)__ usually (img:0) / (img:1) in the zone",
+      "go (img:0) / (img:1): kill (img:checkpoint) rudja",
       "(img:quest_2) risu || (img:portal) areaidg2_town ;; the ardura caravan"
     ],
     [
@@ -237,8 +197,8 @@
     [
       "optional: (img:skill2) in (img:checkpoint) (color:cc99ff)bell_chest",
       "reach (img:checkpoint) intersection",
-      "(quest:ascend) early?: follow (color:aqua)parchment",
-      "(hint)__ kill (img:checkpoint) balbala for (quest:trial_key)",
+      "(quest:ascend) early? follow (color:aqua)parchment",
+      "(hint)__ then kill (img:checkpoint) balbala (quest:(trial_key))",
       "follow blank walls: areaidg2_3 ;; the halani gates"
     ],
     [
@@ -254,15 +214,15 @@
       "(color:cc99ff)desert_map: areaidg2_5_1 ;; mastodon badlands"
     ],
     [
-      "optional: (img:jeweller) (color:cc99ff)league",
-      "optional: (img:support) in (img:checkpoint) (color:cc99ff)fossil || jawbone: (color:cc99ff)abyss",
-      "(img:in-out2) lightless_passage for (img:waypoint)",
+      "optional: (img:jeweller) (color:cc99ff)league || (img:support) in (img:checkpoint) (color:cc99ff)fossil",
+      "optional: jawbone: (color:cc99ff)abyss",
+      "(img:in-out2) lightless_passage: (img:waypoint)",
       "(hint)__ follow cracks in ground",
-      "enter (img:checkpoint) areaidg2_5_2 ;; the bone pits"
+      "enter areaidg2_5_2 ;; the bone pits"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
-      "(color:ff00ff)kill_2: (color:cc99ff)hyenas (quest:(relic)) || arena:ekbab (quest:(tusks))",
+      "kill (color:cc99ff)hyenas (quest:(relic))",
+      "kill (img:checkpoint) ekbab (quest:(tusks))",
       "(img:portal) to areaidg2_town ;; the ardura caravan"
     ],
     [
@@ -271,22 +231,21 @@
       "(color:cc99ff)desert_map: areaidg2_4_1 ;; keth"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
       "optional: (color:66b2ff)amulet: check 2 (img:arena) stairs",
-      "(color:ff00ff)kill_2: (color:cc99ff)serpents (quest:(relic)) || arena:kabala (quest:(book))",
-      "(hint)__ arena:kabala: near areas with more (color:cc99ff)serpents",
-      "enter (img:checkpoint) areaidg2_4_2 (far end of zone) ;; the lost city"
+      "follow & kill (color:cc99ff)serpents (quest:(relic))",
+      "(color:cc99ff)serpents lead to (img:checkpoint) arena:kabala (quest:(book))",
+      "enter areaidg2_4_2 (far end of zone) ;; the lost city"
     ],
     [
       "optional: (img:spirit2) in (img:checkpoint) (color:cc99ff)tomb || (color:66b2ff)jewel from <scarab>",
-      "enter (img:checkpoint) areaidg2_4_3 ;; buried shrines",
+      "reach (img:checkpoint) areaidg2_4_3 ;; buried shrines",
       "(hint)_ - 1st corridor shows gen. direction",
       "(hint)_ - find (img:checkpoint) (color:aqua)v-shaped_bridge along edge"
     ],
     [
-      "optional: (color:66b2ff)res (img:ring) + (img:rune) in (img:checkpoint) (color:cc99ff)elemental_offering",
+      "optional: (color:66b2ff)resist (img:ring) + (img:rune) in (img:checkpoint) (color:cc99ff)elem._offering",
       "find (img:arena) heart_of_keth: kill azarian",
-      "(img:quest_2) halani: (quest:cinders) || (img:quest_2) halani: (quest:essence)",
+      "(img:quest_2) halani: (quest:cinder) || (img:quest_2) halani: (quest:essence)",
       "(img:portal) to areaidg2_town ;; the ardura caravan"
     ],
     [
@@ -296,66 +255,46 @@
     ],
     [
       "optional: preserved rib: (color:cc99ff)abyss",
-      "traverse (color:cc99ff)3_canyons for (color:ff00ff)2_tasks:",
-      "(hint)_ - (quest:seals) at the end of each canyon",
-      "(hint)_ - find (img:waypoint): insert (quest:relics) nearby",
+      "traverse (color:cc99ff)3_canyons for (color:ff00ff)2_tasks",
+      "(hint)_ - (quest:seals) at the end of (color:ff00ff)each_canyon",
+      "(hint)_ - find (img:waypoint) + use (quest:relics) in (color:ff00ff)1_canyon",
       "enter areaidg2_7 ;; the titan grotto"
     ],
     [
       "optional: (img:support) (color:cc99ff)league || (img:rune) in (img:checkpoint) (color:cc99ff)sword",
-      "kill zalmarath for (quest:ruby)",
+      "kill zalmarath (quest:(ruby))",
       "(img:portal) to areaidg2_town ;; the ardura caravan"
     ],
     [
+      "leaguestart: optional: check vendors",
       "(img:quest_2) zarka: (img:support) + (quest:horn) || (img:quest_2) asala",
       "(color:cc99ff)desert_map: areaidg2_2 ;; traitor's passage",
       "(img:quest_2) (color:cc99ff)sound_the_horn",
       "(img:quest_2) asala || (color:cc99ff)desert_map: areaidg2_8 ;; deshar"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
       "optional: (img:artificer) in (img:checkpoint) (color:cc99ff)side-path nearby",
-      "late (quest:ascension?): find (img:checkpoint) (color:cc99ff)corpses",
-      "(hint)__ kill (color:yellow)2_vultures for (color:cc99ff)djinn_barya",
-      "find (img:quest_2) (quest:fallen_dekhara): (quest:letter)",
-      "enter (img:checkpoint) areaidg2_9_1 ;; path of mourning"
+      "(quest:ascend) late?: find (img:checkpoint) (color:cc99ff)corpses",
+      "(hint)__ then kill (color:yellow)vultures (quest:(trial_key))",
+      "find (img:quest_2) (quest:dekhara) for (quest:letter)",
+      "enter areaidg2_9_1 ;; path of mourning"
     ],
     [
-      "leaguestart: optional: dmg issues?: (img:waypoint) to town",
-      "(hint)__ give (quest:letter) to (color:cc99ff)shambrin: (quest:book)",
+      "leaguestart: optional: dmg issues?: (img:waypoint) to (color:fec076)town (img:town2)",
+      "(hint)__ (quest:book): give (quest:letter) to (color:cc99ff)shambrin",
       "optional: (img:support) + <items> in (img:checkpoint) (color:cc99ff)hushed_urn",
       "reach (img:checkpoint) areaidg2_9_2 ;; the spires of deshar"
     ],
     [
-      "(color:ff00ff)2_tasks: (color:cc99ff)sisters_statue || arena:tor_gul",
-      "(hint)_ - (img:checkpoint) (color:cc99ff)statue: g-pattern on the map",
-      "(hint)_ - (img:checkpoint) arena:tor_gul: far end of the zone",
+      "(color:ff00ff)find_2: (color:cc99ff)sister_statue || arena:tor_gul",
+      "(hint)_ - (img:checkpoint) (color:cc99ff)statue: g-pattern on map",
+      "(hint)_ - (img:checkpoint) arena:tor_gul: far end of zone",
       "(img:portal) to areaidg2_town ;; the ardura caravan"
     ],
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "optional: check vendors",
-        "(color:cc99ff)desert_map: areaidexpeditionsubarea_kalguur_act2 ;; skull of the titan"
-      ]
-    },
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "enter (img:arena) cave_mouth",
-        "enter (img:checkpoint) (color:cc99ff)runic_vault || (img:quest_2) farrow",
-        "(img:portal) to areaidg2_town ;; ardura caravan"
-      ]
-    },
     [
-      "give (quest:letter) to (color:cc99ff)shambrin: (quest:book)",
-      "late (quest:ascension?): (img:quest_2) zarka || (img:quest_2) asala",
+      "(quest:book): give (quest:letter) to (color:cc99ff)shambrin",
+      "leaguestart: optional: check vendors",
+      "(quest:ascend) late?: (img:quest_2) zarka || (img:quest_2) asala",
       "(hint)__ (color:cc99ff)desert_map: areaidg2_13 ;; trial of the sekhemas",
       "(color:cc99ff)desert_map: areaidg2_12 ;; the dreadnought"
     ],
@@ -364,18 +303,18 @@
       "(img:portal) to areaidg2_town ;; the ardura caravan"
     ],
     [
-      "go (img:7): (img:quest_2) hooded one",
-      "(hint)_ - wait for transformation",
-      "(hint)_ - (color:cc99ff)esc:_char_selection (opt. skip)",
       "leaguestart: optional: check vendors",
+      "go (img:7): (img:quest_2) hooded one",
+      "(hint)_ - (color:red)wait_for_quest: \"talk to asala...\"",
+      "(hint)_ - opt. walk skip: (color:cc99ff)esc:_char_selection",
       "(img:quest_2) asala: areaidg3_1 ;; sandswept marsh"
     ]
   ],
   [
     [
       "optional: (img:skill2) arena:rootdredge || (img:ring) in (img:checkpoint) (color:cc99ff)tree",
-      "optional: (img:jeweller) in (img:checkpoint) (color:cc99ff)azak_campfire near exit",
-      "reach (img:checkpoint) areaidg3_town ;; ziggurat encampment"
+      "optional: (img:jeweller) in (img:checkpoint) (color:cc99ff)azak_camp near exit",
+      "reach areaidg3_town ;; ziggurat encampment"
     ],
     [
       "leaguestart: (img:quest_2) oswald",
@@ -383,34 +322,32 @@
       "enter areaidg3_3 ;; jungle ruins"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
       "optional: (img:support2) (color:cc99ff)league || <gloves>: (img:checkpoint) (color:cc99ff)camp chest",
-      "(color:ff00ff)2_tasks: get (img:waypoint) || (img:checkpoint) arena:monkey (center)",
-      "(hint)__ on the way, look around for (color:cc99ff)snakes",
-      "follow (color:cc99ff)snakes: (img:checkpoint) areaidg3_4 ;; venom crypts"
+      "follow waterway edge: get (img:waypoint)",
+      "follow (color:cc99ff)snakes: get (img:checkpoint) near (color:fec076)crypts",
+      "(quest:book): kill (img:checkpoint) silverfist (center)",
+      "enter areaidg3_4 ;; venom crypts"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
-      "optional: (img:skill) (color:cc99ff)league || (img:support) in (img:checkpoint) (color:cc99ff)priest_crypt",
+      "optional: (img:skill) (color:cc99ff)league || (img:support) in (img:checkpoint) (color:cc99ff)crypt",
       "optional: collarbone: (color:cc99ff)abyss",
-      "find (img:checkpoint) (quest:corpse) for (quest:venom)",
-      "(hint)__ near areas with more (color:cc99ff)humanoids",
+      "follow (color:cc99ff)humanoid_enemies",
+      "(hint)__ find (img:checkpoint) (quest:corpse) for (quest:venom)",
       "use (img:arena) exit to areaidg3_3 ;; jungle ruins"
     ],
     [
       "optional: (img:support2) (color:cc99ff)league || <gloves>: (img:checkpoint) (color:cc99ff)camp chest",
-      "enter (img:checkpoint) areaidg3_2_1 nearby ;; infested barrens"
+      "enter areaidg3_2_1 nearby ;; infested barrens"
     ],
     [
       "optional: <boots>: (img:checkpoint) (color:cc99ff)camp chest",
-      "leaguestart: (img:in-out2) mystic_refuge for (img:waypoint)",
-      "enter (img:checkpoint) areaidg3_5 ;; chimeral wetlands",
-      "(hint)__ npc in (img:checkpoint) (color:cc99ff)camp can reveal it"
+      "reach areaidg3_5 ;; chimeral wetlands",
+      "(hint)__ (img:checkpoint) (color:cc99ff)camp npc  can reveal it"
     ],
     [
       "activate the (img:waypoint)",
       "(img:portal) to areaidg3_town ;; ziggurat encampment",
-      "(hint)__ portal = less walking in town"
+      "(hint)__ portal = less town walking"
     ],
     [
       "(img:quest_2) servi: (color:lime)perma_buff + (img:artificer)",
@@ -419,62 +356,42 @@
       "enter (img:portal) areaidg3_5 ;; chimeral wetlands"
     ],
     [
-      "optional: (img:checkpoint) (color:cc99ff)camp:  <helmet> + (img:quest_2) (color:cc99ff)book",
-      "(hint)__ (color:cc99ff)book reveals (img:arena) areaidg3_10_airlock ;; temple of chaos",
+      "optional: <helmet> + (img:quest_2) (color:cc99ff)log in (img:checkpoint) (color:cc99ff)camp",
+      "(hint)__ (color:cc99ff)log reveals (img:arena) areaidg3_10_airlock ;; temple of chaos",
       "(color:ff00ff)2_tasks along the edge:",
-      "(hint)_ - (img:in-out2) areaidg3_10_airlock for (img:waypoint) ;; temple of chaos",
+      "(hint)_ - (img:in-out2) areaidg3_10_airlock: (img:waypoint) ;; temple of chaos",
       "(hint)_ - kill (img:checkpoint) chimera (quest:(trial_key))",
       "enter areaidg3_6_1 ;; jiquani's machinarium"
     ],
     [
       "optional: (img:artificer) (color:cc99ff)league",
-      "find (quest:core) for (color:cc99ff)altar || (quest:2_cores) for:",
+      "get (quest:core) for (color:cc99ff)altar || (quest:2_cores) for:",
       "(hint)_ - (img:checkpoint) arena:blackjaw: room on side edge",
       "(hint)_ - (img:checkpoint) (color:cc99ff)locked_exit: follow red line",
       "enter areaidg3_6_2 ;; jiquani's sanctum"
     ],
     [
-      "find (quest:2_cores), start (quest:2_gens.) (v-shape)",
-      "(img:checkpoint) -travel to start, activate (quest:core)",
-      "kill zicoatl || (img:waypoint) to areaidg3_3 ;; jungle ruins"
+      "find (quest:2_cores) for (quest:2_generators) (v-shape)",
+      "(img:checkpoint) -travel to (color:cc99ff)start, activate (quest:soul_core)",
+      "kill zicoatl (quest:(core)) || (img:waypoint) to areaidg3_3 ;; jungle ruins"
     ],
     [
       "activate (img:quest_2) (color:cc99ff)stone_altar",
       "enter areaidg3_2_2 ;; the matlan waterways"
     ],
     [
-      "optional: (img:spirit2) (color:cc99ff)league || optional: <belt>: (img:checkpoint) (color:cc99ff)grave",
-      "optional: <caster_weap>: (img:checkpoint) (color:cc99ff)hut",
+      "optional: (img:spirit2) (color:cc99ff)league",
+      "optional: <spell_weap>: (img:checkpoint) (color:cc99ff)hut || <belt>: (img:checkpoint) (color:cc99ff)grave",
       "find (img:waypoint) || reach (color:cc99ff)mechanism (end)",
-      "return to (img:waypoint) || enter (img:checkpoint) areaidg3_7 ;; azak bog"
+      "(img:checkpoint) -travel to (img:waypoint) || enter areaidg3_7 ;; azak bog"
     ],
     [
-      "leaguestart: (img:quest_2) farrow: activate (color:cc99ff)runestone",
       "optional: (img:quest_2) (color:cc99ff)flameskin_ritual",
       "(hint)__ (color:red)25%_fire_res for rest of zone",
-      "kill (img:checkpoint) ignagduk for (quest:2_items)",
-      "(hint)__ (img:quest_2) (color:cc99ff)flameskin_ritual points to her",
-      "(img:portal) to areaidg3_town ;; ziggurat encampment"
+      "kill (img:checkpoint) ignagduk (quest:(skull))",
+      "(hint)__ (img:quest_2) (color:cc99ff)flame_ritual points to her",
+      "(img:portal) areaidg3_town ;; ziggurat encampment"
     ],
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "(img:waypoint) to areaidexpeditionsubarea_kalguur_act3 ;; mystic refuge"
-      ]
-    },
-    {
-      "condition": [
-        "league-start",
-        "yes"
-      ],
-      "lines": [
-        "enter (color:cc99ff)runic_vault || (img:quest_2) farrow",
-        "(img:portal) to areaidg3_town ;; ziggurat encampment"
-      ]
-    },
     [
       "(img:quest_2) servi: (color:66b2ff)ailment_charm",
       "leaguestart: optional: check vendors",
@@ -484,21 +401,22 @@
     ],
     [
       "optional: medved's crest: (color:cc99ff)league",
-      "(hint)__ used to upgrade (color:ff8111)uniques",
-      "leaguestart: (img:in-out2) areaidg3_9 for (img:waypoint) ;; the molten vault",
+      "leaguestart: (img:in-out2) areaidg3_9: (img:waypoint) ;; the molten vault",
       "reach (img:checkpoint) areaidg3_11 ;; apex of filth"
     ],
     [
-      "optional: qual flasks in (img:checkpoint) (color:cc99ff)cauldron",
-      "(hint)__ find/loot (quest:3_mushrooms)",
-      "kill queen_of_filth for (quest:idol)",
+      "optional: qual (img:flasks): find (quest:3_mushrooms)",
+      "(hint)__ bring them to (img:checkpoint) (color:cc99ff)cauldron",
+      "(hint)__ (opposite the (img:waypoint) + start area)",
+      "kill queen_of_filth (quest:(idol))",
       "(img:portal) to areaidg3_town ;; ziggurat encampment"
     ],
     [
-      "leaguestart: (img:waypoint) to areaidg3_9: kill mektul ;; the molten vault",
-      "(hint)_ - (img:quest_2) oswald: (quest:reforging_bench), (img:skill2), (img:artificer)",
-      "(hint)_ - skippable for later if preferred",
-      "go (img:3), open (color:cc99ff)door: areaidg3_12 ;; temple of kopec"
+      "leaguestart: optional: check vendors",
+      "leaguestart: (img:waypoint) areaidg3_9: kill mektul ;; the molten vault",
+      "(hint)_ - (img:quest_2) oswald: (img:skill2), (img:artificer), (quest:reforge_bench)",
+      "(hint)_ - (color:cc99ff)skippable_for_later if preferred",
+      "go (img:3) to (color:cc99ff)door: areaidg3_12 ;; temple of kopec"
     ],
     [
       "optional: (img:spirit2) (color:cc99ff)league",
@@ -511,65 +429,70 @@
       "follow stairs to areaidg3_14 ;; utzaal"
     ],
     [
-      "(color:ff00ff)kill_2: (color:cc99ff)goliaths (color:lime)(heart) || (img:checkpoint) arena:napuatzi",
-      "(hint)_ - (quest:heart) also drops next zone: 2nd half",
-      "(hint)_ - war-cry sound leads to arena:napuatzi",
+      "kill (color:cc99ff)goliaths (quest:(heart))",
+      "(hint)__ plan b: next zone (2nd half)",
+      "find & kill (img:checkpoint) arena:napuatzi",
+      "(hint)__ war-cry sound leads to her",
       "enter (img:checkpoint) areaidg3_16 ;; aggorat"
     ],
     [
       "optional: (img:skill2) (color:cc99ff)league",
       "find plaza and (img:checkpoint) || farm (quest:heart?)",
-      "use (quest:heart) in (img:checkpoint) (color:cc99ff)blood_sacrifice",
-      "enter (img:checkpoint) areaidg3_17 ;; the black chambers"
+      "use (quest:heart): (img:checkpoint) (color:cc99ff)blood_sacr. (edge)",
+      "enter areaidg3_17 (edge) ;; the black chambers"
     ],
     [
-      "find & kill (img:checkpoint) doryani",
+      "find & defeat (img:checkpoint) arena:doryani",
       "(hint)__ zone: mazes connected by bridges",
       "(img:portal) to areaidg3_town ;; ziggurat encampment"
     ],
     [
       "(img:quest_2) doryani: (quest:cut-scene)",
-      "(img:quest_2) doryani",
-      "(img:quest_2) alva: (color:cc99ff)travel_to areaidg4_town ;; kingsmarch"
+      "(img:quest_2) doryani || (img:quest_2) alva: areaidg4_town ;; kingsmarch",
+      "(color:red)info:_act_4_league-start_shuffle",
+      "(hint)__ (img:quest_2) matiki's position is unknown, so",
+      "(hint)__ every arena:boss has a (color:red)free (img:quest_2) (color:red)matiki step"
     ]
   ],
   [
     [
       "(img:quest_2) doryani || (img:quest_2) alva: (quest:charter)",
-      "leaguestart: optional: check vendors || extra vendors in:",
-      "(hint)__ areaidg4_8a: <jewelry/caster>, areaidg4_11_1a: <atk> ;; arastas ;; ngakanu",
+      "leaguestart: optional: check (extra) vendors:",
+      "(hint)_ - areaidg4_8a: <jewelry/caster> ;; arastas",
+      "(hint)_ - areaidg4_11_1a: <atk_weapons> ;; ngakanu",
       "(img:quest_2) makoru (ship): areaidg4_1_1 ;; isle of kin"
     ],
     [
-      "optional: (img:gcp) (color:cc99ff)league || (img:skill) (img:support2) in (img:checkpoint) (color:cc99ff)beast_pen",
       "leaguestart: optional: (img:jeweller) in (img:checkpoint) (color:cc99ff)delve_site",
-      "twinkrun: optional: (img:jeweller) in (img:checkpoint) (color:cc99ff)delve || (img:quest_2) (quest:map): (img:checkpoint) (color:cc99ff)sailor",
+      "optional: (img:gcp) (color:cc99ff)league || (img:skill) (img:support2) in (img:checkpoint) (color:cc99ff)beast_pen",
+      "twinkrun: optional: (img:jeweller) in (img:checkpoint) (color:cc99ff)delve || (img:quest_2) (quest:map) in (img:checkpoint) (color:cc99ff)boat",
       "optional: greater (img:b-rune) from (img:checkpoint) arena:blind_beast",
-      "leaguestart: find (img:quest_2) (quest:map) on (img:checkpoint) (color:cc99ff)sailor",
-      "reach (img:checkpoint) areaidg4_1_2 ;; volcanic warrens"
+      "leaguestart: find (img:quest_2) (quest:map-piece) in (img:checkpoint) (color:cc99ff)boat",
+      "reach areaidg4_1_2 ;; volcanic warrens"
     ],
     [
-      "optional: quality (color:ff0000)fire / (color:ffff00)light (img:ring) in (img:checkpoint) (color:cc99ff)nest",
+      "optional: qual fire/light (img:ring) in (img:checkpoint) (color:cc99ff)nest",
       "(hint)_ - element = (color:cc99ff)golem_killed_last",
       "(hint)_ - can roll multiple ele-mods",
-      "follow lava upstream: (img:checkpoint) arena:krutog",
+      "follow (color:cc99ff)lava upstream:",
+      "(hint)__ kill (img:checkpoint) krutog & (color:red)free (img:quest_2) (color:red)matiki?",
       "makoru (ship): areaidg4_2_1 ;; kedge bay"
     ],
     [
       "optional: (img:support) (color:cc99ff)league || optional: alch: (img:checkpoint) (color:cc99ff)tidal_cay",
-      "twinkrun: optional: (img:quest_2) (quest:map) in (img:checkpoint) (color:cc99ff)stash",
-      "find (img:quest_2) (quest:map) in (img:checkpoint) (color:cc99ff)stash",
+      "twinkrun: optional: (img:quest_2) (quest:map-piece) in (img:checkpoint) (color:cc99ff)stash",
+      "leaguestart: find (img:quest_2) (quest:map-piece) in (img:checkpoint) (color:cc99ff)stash",
       "reach areaidg4_2_2 ;; journey's end"
     ],
     [
-      "activate the (img:waypoint) _|| (img:quest_2) tujen",
-      "kill (img:checkpoint) hartlin || enter (img:portal)",
-      "(img:portal) to areaidg4_town ;; kingsmarch"
+      "activate (img:waypoint)",
+      "(img:quest_2) tujen || kill (img:checkpoint) hartlin",
+      "enter (img:portal) || (img:portal) to areaidg4_town ;; kingsmarch"
     ],
     [
-      "(img:quest_2) dannig: (quest:verisium_spikes)",
       "leaguestart: optional: check vendors",
-      "(img:waypoint) to areaidg4_2_2 ;; journey's end"
+      "(img:quest_2) dannig: (quest:verisium_spikes)",
+      "enter (img:portal) areaidg4_2_2 ;; journey's end"
     ],
     [
       "(img:quest_2) freya || kill omniphobia",
@@ -582,39 +505,43 @@
     ],
     [
       "optional: (img:support) in (img:checkpoint) (color:cc99ff)crabshell_cavern",
-      "twinkrun: optional: (img:quest_2) (quest:map): (img:checkpoint) (color:cc99ff)petrified_pirate",
+      "twinkrun: optional: (img:quest_2) (quest:map-piece) on (img:checkpoint) (color:cc99ff)pirate",
       "leaguestart: (color:ff00ff)find_2:",
-      "(hint)_ - (img:checkpoint) (color:cc99ff)petrified_pirate: (img:quest_2) (quest:map)",
-      "(hint)_ - (img:checkpoint) arena:great_white: (img:quest_2) (quest:fin) (edge)",
+      "(hint)_ - (img:quest_2) (quest:map-piece): (img:checkpoint) (color:cc99ff)petr._pirate",
+      "(hint)_ - (img:quest_2) (quest:fin): (img:checkpoint) arena:great_white (edge)",
       "twinkrun: kill (img:checkpoint) great_white (edge)",
-      "enter (img:checkpoint) areaidg4_3_2 ;; singing caverns"
+      "enter areaidg4_3_2 ;; singing caverns"
     ],
     [
-      "optional: <all-res_amu>: get (quest:pearl) in (img:checkpoint) (color:cc99ff)clam",
-      "(hint)__ bring it to (img:quest_2) rog in areaidg4_town ;; kingsmarch",
-      "follow (color:cc99ff)voice: kill (img:checkpoint) diamora",
-      "(color:red)talk_to (img:quest_2) matiki",
+      "optional: <all-res_amu>: (quest:pearl) in (img:checkpoint) (color:cc99ff)clam",
+      "(hint)__ give it to (img:quest_2) rog in areaidg4_town ;; kingsmarch",
+      "follow the (color:cc99ff)singing_voice:",
+      "(hint)__ kill (img:checkpoint) diamora & (color:red)free (img:quest_2) (color:red)matiki?",
       "makoru (ship): areaidg4_11_1a  ;; ngakanu"
     ],
     [
+      "leaguestart: optional: (img:quest_2) ruhaki (vendor): <atk_weapons>",
       "give (quest:shark_fin) to (img:quest_2) kaimana",
+      "(hint)__ (quest:buff) is permanent: (color:red)cannot_be_changed",
       "makoru (ship): areaidg4_5_1 ;; abandoned prison"
     ],
     [
       "(quest:buff): 30% inc. flask recovery",
-      "(hint)_ - kill (color:cc99ff)necromancers for (quest:key)",
+      "(hint)_ - kill (color:cc99ff)necromancers (quest:(key))",
       "(hint)_ - find (img:checkpoint) (color:cc99ff)chapel, activate (quest:statue)",
-      "enter (img:checkpoint) areaidg4_5_2 ;; solitary confinement"
+      "enter areaidg4_5_2 ;; solitary confinement"
     ],
     [
-      "kill (img:checkpoint) prisoner",
+      "reach the end of the zone:",
+      "(hint)__ kill (img:checkpoint) prisoner & (color:red)free (img:quest_2) (color:red)matiki?",
       "makoru (ship): areaidg4_7 ;; shrike island"
     ],
     [
-      "twinkrun: optional: (img:quest_2) (quest:map) in (img:checkpoint) (color:cc99ff)corpse_nest",
-      "leaguestart: find (img:quest_2) (quest:map) in (img:checkpoint) (color:cc99ff)corpse_nest",
-      "kill (img:checkpoint) scourge_of_the_skies",
-      "(img:portal) areaidg4_town ;; kingsmarch"
+      "twinkrun: optional: (img:quest_2) (quest:map-piece) in (img:checkpoint) (color:cc99ff)nest",
+      "leaguestart: find (img:quest_2) (quest:map-piece) in (img:checkpoint) (color:cc99ff)nest",
+      "reach the end of the zone:",
+      "(hint)__ kill (img:checkpoint) scourge & (color:red)free (img:quest_2) (color:red)matiki?",
+      "(img:portal) to areaidg4_town ;; kingsmarch"
     ],
     [
       "(img:quest_2) hooded one",
@@ -626,15 +553,15 @@
     ],
     [
       "optional: chaos orb: (color:cc99ff)league",
-      "(img:quest_2) matiki || (img:quest_2) (color:cc99ff)well || complete 3 tests",
-      "(hint)__ (img:spirit2): (color:cc99ff)waterfall between 2nd/3rd test",
+      "(img:quest_2) matiki || (img:quest_2) (color:cc99ff)well || survive 3 tests",
+      "(hint)__ (img:spirit2): (color:cc99ff)waterfall between tests 2 & 3",
       "(img:quest_2) (color:lime)pay_respects in (img:checkpoint) (color:cc99ff)silent_hall",
-      "enter (img:checkpoint) areaidg4_4_2 ;; halls of the dead"
+      "enter areaidg4_4_2 ;; halls of the dead"
     ],
     [
-      "complete 3 (img:checkpoint) (color:cc99ff)tests for (quest:tattoos)",
+      "complete 3 (img:checkpoint) (color:cc99ff)tests: (quest:tattoos)",
       "(hint)__ (img:quest_2) totems: turn in (quest:tattoos)",
-      "defeat (img:checkpoint) (color:ff8111)yama for (quest:silver_coin)",
+      "defeat (img:checkpoint) (color:ff8111)yama (quest:(silver_coin))",
       "enter areaidg4_4_3 ;; trial of the ancestors"
     ],
     [
@@ -642,16 +569,17 @@
       "makoru (ship): areaidg4_8b ;; arastas (hostile)"
     ],
     [
-      "(img:quest_2) lorandis: go in, then out",
-      "optional: 3 (img:exa) + 3 (img:regal) in (color:cc99ff)2 (img:checkpoint) (color:cc99ff)bells",
-      "kill torvian",
-      "enter areaidg4_10 ;; the excavation"
+      "(img:quest_2) lorandis: follow & leave",
+      "optional: 3 (img:exa) in (img:checkpoint) (color:cc99ff)bell (cliff side)",
+      "optional: 3 (img:regal) in (img:checkpoint) (color:cc99ff)bell (opposite side)",
+      "kill torvian: areaidg4_10 ;; the excavation"
     ],
     [
-      "kill (img:checkpoint) benedictus || enter site",
-      "(color:cc99ff)cut-scene || (img:portal) to areaidg4_town ;; kingsmarch",
-      "(hint)__ (color:cc99ff)skip: when quest says \"speak to",
-      "(hint)__ the hooded one,\" (color:cc99ff)esc:_respawn"
+      "kill (img:checkpoint) benedictus",
+      "enter the site: (quest:cut-scene)",
+      "(hint)__ (color:cc99ff)esc:_respawn when quest says",
+      "(hint)__ \"speak to the hooded one\"",
+      "(img:portal) to areaidg4_town ;; kingsmarch"
     ],
     [
       "leaguestart: optional: check vendors",
@@ -660,18 +588,18 @@
     [
       "leaguestart: greater (img:jeweller): (color:cc99ff)league",
       "twinkrun: optional: greater (img:jeweller): (color:cc99ff)league",
-      "reach (img:checkpoint) areaidg4_11_2 ;; heart of the tribe"
+      "reach areaidg4_11_2 ;; heart of the tribe"
     ],
     [
       "find & defeat arena:tavakai",
       "(img:quest_2) tavakai || (img:portal) areaidg4_town ;; kingsmarch"
     ],
     [
-      "(color:red)if_you're_using_the_timer:",
-      "(hint)__ (img:quest_2) hooded one: (color:cc99ff)travel_to_ogham",
-      "(hint)__ (so the timer stays synced up)",
-      "(img:quest_2) hooded one: (color:cc99ff)travel_to_vastiri",
-      "(hint)__ (color:yellow)non-linear_order:_2-3-2-1_for (quest:buffs)",
+      "(color:yellow)non-linear_interludes:_2-3-2-1",
+      "(hint)__ this order prioritizes (quest:buffs)",
+      "(color:red)using_the_timer?_extra_step:",
+      "(hint)__ (img:quest_2) hooded one: (color:cc99ff)ogham",
+      "(img:quest_2) hooded one: (color:cc99ff)vastiri_desert",
       "enter areaidp2_town ;; the khari bazaar"
     ]
   ],
@@ -681,17 +609,17 @@
       "go (img:1) to areaidp2_1 ;; the khari crossing"
     ],
     [
-      "optional: <jewelry/caster> (color:cc99ff)vendor",
-      "(hint)__ south between the next 2 (img:checkpoint)",
-      "go (img:0) + (img:7) to (img:checkpoint) (color:cc99ff)stairway",
-      "get (quest:molten_gift) || (color:cc99ff)esc:_respawn",
-      "follow (img:6) edge: (img:checkpoint) areaidp2_5 ;; galai gates"
+      "go (img:0) + (img:7): enter (img:arena) (color:cc99ff)stairway",
+      "get (quest:molt._gift) || (color:cc99ff)esc:_respawn",
+      "follow (img:6) edge: areaidp2_5 ;; galai gates"
     ],
     [
       "activate (img:waypoint)",
       "go back to areaidp2_1 ;; the khari crossing"
     ],
     [
+      "optional: (img:checkpoint) vendor: <jewelry/caster>",
+      "(hint)__ in a wagon (img:2) / (img:1) from here",
       "(img:checkpoint) -travel to (color:cc99ff)town_entrance",
       "go (img:2), kill (img:checkpoint) anundr_&_akthi",
       "(img:portal) to areaidp2_town ;; khari bazaar"
@@ -701,11 +629,13 @@
       "go (img:5) to areaidp2_1 ;; the khari crossing"
     ],
     [
-      "go (img:6) to (img:checkpoint) areaidp2_2 ;; pools of khatal"
+      "go (img:6) to areaidp2_2 ;; pools of khatal"
     ],
     [
-      "(img:waypoint) to areaidp2_town (img:town) ;; khari bazaar",
-      "(img:quest_2) hooded one: (color:cc99ff)travel_to_kriar",
+      "(img:waypoint) to areaidp2_town (img:town2) ;; khari bazaar"
+    ],
+    [
+      "(img:quest_2) hooded one: (color:cc99ff)mount_kriar",
       "enter areaidp3_town ;; the glade"
     ],
     [
@@ -713,17 +643,18 @@
     ],
     [
       "optional: (img:skill) in (img:checkpoint) (color:cc99ff)monument",
-      "reach (img:checkpoint) areaidp3_2 ;; kriar village"
+      "reach areaidp3_2 ;; kriar village"
     ],
     [
-      "kill (img:checkpoint) lythara for (quest:skull)",
+      "kill (img:checkpoint) lythara (quest:(skull))",
       "enter areaidp3_3 ;; glacial tarn"
     ],
     [
-      "follow (img:2) edge: (img:checkpoint) areaidp3_4 ;; howling caves"
+      "follow (img:2) edge: areaidp3_4 ;; howling caves"
     ],
     [
-      "kill (img:checkpoint) yeti (color:lime)(tusks) || (img:portal) areaidp3_town ;; the glade"
+      "find & kill (img:checkpoint) yeti (quest:(tusks))",
+      "(img:portal) to areaidp3_town ;; the glade"
     ],
     [
       "(img:quest_2) hilda: (quest:book)",
@@ -744,82 +675,89 @@
     ],
     [
       "kill (img:checkpoint) zolin_&_zelina",
-      "(img:quest_2) doryani || (img:portal) areaidp3_town ;; the glade"
+      "(img:quest_2) doryani",
+      "leaguestart: (img:portal) to areaidp3_town ;; the glade",
+      "twinkrun: (img:waypoint) to areaidp2_2 ;; pools of khatal"
     ],
-    [
-      "leaguestart: optional: check vendors",
-      "(img:waypoint) to areaidp2_2 ;; pools of khatal"
-    ]
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "leaguestart: optional: check vendors",
+        "(img:waypoint) to areaidp2_2 ;; pools of khatal"
+      ]
+    }
   ],
   [
     [
-      "reach (img:checkpoint) areaidp2_3 ;; sel khari sanctuary"
+      "reach areaidp2_3 ;; sel khari sanctuary"
     ],
     [
-      "optional: <ring/amu/jewel>: loot (quest:2_baryas)",
-      "(hint)__ put into (img:checkpoint) (color:cc99ff)pedestals (side edges)",
+      "optional: <ring/amu/jewel>: loot 2 (quest:barya)",
+      "(hint)__ put into (img:checkpoint) (color:cc99ff)pedestals (edges)",
       "find & kill (img:checkpoint) elzarah",
       "(img:quest_2) asala || (img:portal) to areaidp2_town ;; the khari bazaar"
     ],
     [
-      "(img:waypoint) to areaidp2_5 ;; the galai gates"
+      "(img:waypoint) to areaidp2_5 ;; the galai gates",
+      "kill vornas || enter areaidp2_6 ;; qimah"
     ],
     [
-      "kill (img:checkpoint) vornas || enter areaidp2_6 ;; qimah"
+      "(quest:buff): find (img:checkpoint) (color:cc99ff)side_room",
+      "(hint)_ - (color:ff00ff)either: along the (img:0) edge",
+      "(hint)_ - (color:ff00ff)or: (img:3) of (img:arena) entrance/exit",
+      "(img:quest_2) jado: areaidp2_7 ;; qimah reservoir"
     ],
     [
-      "(quest:buff): (img:checkpoint) (color:cc99ff)7_pillars (corners/edges)",
-      "(hint)_ - follow (img:0) edge to the (img:arena) (color:cc99ff)exit",
-      "(hint)_ - not there? it's (img:3) of (img:arena) exit_/_start",
-      "(img:quest_2) jado || enter (img:checkpoint) areaidp2_7 ;; qimah reservoir"
-    ],
-    [
-      "optional: currency: find (quest:2_vials) + (color:cc99ff)2 (img:checkpoint) (color:cc99ff)wells",
-      "(hint)__ 1st drops, 2nd in (img:checkpoint) (color:cc99ff)side-room <chest>",
+      "optional: currency: find 2 (quest:vials) + (img:checkpoint) (color:cc99ff)wells",
+      "(hint)__ (quest:1st): drop || (quest:2nd): (img:checkpoint) (color:cc99ff)side-room <chest>",
       "kill (img:checkpoint) azmadi || (img:quest_2) grand barya",
       "(img:quest_2) jado || (img:portal) to areaidp2_town ;; the khari bazaar"
     ],
     [
-      "(img:quest_2) hooded one: (color:cc99ff)travel_to_ogham",
-      "(color:red)timer-users: (img:waypoint) to areaidp1_town ;; the refuge"
+      "(color:red)timer-users: (img:waypoint) to areaidp1_town (img:town2) ;; the refuge",
+      "(img:quest_2) hooded one: (color:cc99ff)ogham"
     ]
   ],
   [
     [
       "leaguestart: optional: check vendors",
-      "enter (img:checkpoint) areaidp1_1 ;; scorched farmlands"
+      "enter areaidp1_1 ;; scorched farmlands"
     ],
     [
       "optional: (img:skill) on (img:checkpoint) (color:cc99ff)corpse by the road",
-      "get the (img:checkpoint) next to (color:cc99ff)wall_of_darkness",
-      "kill witches, enter (img:checkpoint) areaidp1_2 ;; stones of serle"
+      "get (img:checkpoint) near (color:cc99ff)wall_of_darkness",
+      "kill duo, enter areaidp1_2 ;; stones of serle"
     ],
     [
-      "find 6 (img:checkpoint) (color:cc99ff)megaliths || kill siora",
+      "find 6 (img:checkpoint) (color:cc99ff)megaliths: kill siora",
       "talk to (img:quest_2) una",
       "go back: areaidp1_1 ;; scorched farmlands",
       "(hint)__ (color:red)wait_for_quest: \"return to...\""
     ],
     [
-      "(img:checkpoint) -travel to (color:cc99ff)wall_of_darkness",
-      "enter (img:checkpoint) areaidp1_3 ;; the blackwood"
+      "(img:checkpoint) -travel: (color:cc99ff)wall_of_darkness",
+      "enter areaidp1_3 ;; the blackwood"
     ],
     [
       "optional: omens in (color:cc99ff)omen_altars",
-      "reach (img:checkpoint) areaidp1_4 ;; holten"
+      "reach areaidp1_4 ;; holten"
     ],
     [
-      "optional: (img:checkpoint) (color:cc99ff)rune_vendor: (img:6) of (color:cc99ff)bridge",
-      "(hint)__ (color:cc99ff)bridge is on way to areaidp1_5 ;; wolvenhold",
-      "follow (img:1) edge:  (img:checkpoint) areaidp1_5 ;; wolvenhold"
+      "optional: (img:checkpoint) vendor: greater (img:rune)",
+      "(hint)_ - follow (img:1) edge to (color:cc99ff)bridge",
+      "(hint)_ - cross (color:cc99ff)bridge & go (img:5)",
+      "follow (img:1) edge: areaidp1_5 ;; wolvenhold"
     ],
     [
-      "kill (img:checkpoint) oswin for (quest:book)",
-      "(hint)__ usually (img:1) or (img:7)",
-      "go back to (img:checkpoint) areaidp1_4 ;; holten"
+      "find & kill (img:checkpoint) oswin (quest:(book))",
+      "(hint)__ (img:1) or (img:7) end of the zone",
+      "(img:checkpoint) -travel back to areaidp1_4 ;; holten"
     ],
     [
-      "(img:0) edge leads to (img:checkpoint) areaidp1_6 ;; holten estate"
+      "follow (img:0) edge: areaidp1_6 ;; holten estate"
     ],
     [
       "kill (img:checkpoint) elswyth_&_wulfric",
@@ -836,7 +774,8 @@
       "enter areaidg_endgame_town ;; the ziggurat refuge"
     ],
     [
-      "(img:quest_2) hooded one || (img:quest_2) doryani",
+      "(img:quest_2) hooded one",
+      "(img:quest_2) doryani",
       "leaguestart: use the (color:cc99ff)map_device",
       "<the_act-tracker_ends_here>"
     ]
