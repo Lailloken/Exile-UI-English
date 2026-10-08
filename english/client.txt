@@ -56,6 +56,7 @@
 		system_parenthesis		=	"(#)"				;## the level-up message in the game's client.txt log-file "CHARACTER (CLASS) is now Level X" uses a different parenthesis in Japanese at least
 		system_poedb_lang		=	"us"					;## which language to use on poedb (available: tw, cn, kr, us, jp, ru, po, th, fr, de, es)
 		system_poedb_lang		=	"modifiers"			;## it's the localized name of this section on poeDB: https://poedb.tw/us/Modifiers
+		system_poedb_lang		=	"vaal modifiers"		;## sub-tab of the modifiers page for vaal implicits
 
 
 ;#####################################################
@@ -123,12 +124,14 @@
 		maps_vaults			=	"vaults of kamasa"
 
 		maps_voidreliquary		=	"the reliquary vault"		;## accessible via reliquary keys
-		maps_biome			=	"biome:"			;## each map on the atlas belongs to a biome
+		maps_biome			=	"biome:"					;## each map on the atlas belongs to a biome
 
 
 ;## these strings are shown in the map-info panel
-		maps_stats_full		=	"mods#quantity#rarity#pack size#maps#scarabs#currency#waystones"		;## map rolls/multipliers
-		maps_stats			=	"x#q#r#p#m#s#c#w"							;## x = multiplication-sign, see above for the rest
+		maps_stats_full		=	"mods#quantity#rarity#pack size#maps#scarabs#currency"				;## map rolls/multipliers
+		maps_stats_full2		=	"mods#rarity#pack size#monster rarity#effectiveness#waystones"		;## map rolls/multipliers
+		maps_stats			=	"x#q#r#p#m#s#c"											;## x = multiplication-sign, see above for the rest
+		maps_stats2			=	"x#r#p#r#e#w"												;## x = multiplication-sign, see above for the rest
 
 
 
@@ -247,6 +250,7 @@
 		items_uncut_gem		=	"Uncut Skill Gem"
 		items_uncut_gem		=	"Uncut Support Gem"
 		items_uncut_gem		=	"Uncut Spirit Gem"
+		items_cannon			=	"Trarthan Cannon"
 
 		items_merc_warrant		=	"Mercenary Warrant"					;## PoE1 only
 
@@ -274,6 +278,8 @@
 
 		items_map_waystonechance	=	"Waystone Drop Chance:"			;## PoE2 only (whole block)
 		items_map_revives		=	"Revives Available:"
+		items_map_monstereffect	=	"Monster Effectiveness:"
+		items_map_monsterrarity	=	"Monster Rarity:"
 		items_sockets			=	"Sockets:"
 
 
@@ -322,6 +328,7 @@
 		items_affix			=	""#""					;## in my limited testing, I only found Japanese to use something other than quotation marks (「#」)
 		items_uniquemod		=	"Unique Modifier"
 		items_implicit			=	"Implicit Modifier"
+		items_implicit_anoint	=	"Enhancement"
 		items_implicit_corrupt	=	"Corruption Enhancement"
 		items_implicit_exarch	=	"Searing Exarch Implicit Modifier"
 		items_implicit_eater	=	"Eater of Worlds Implicit Modifier"

@@ -209,7 +209,7 @@
     ],
     "betrayal enable": [
       "interactive cheat sheet overlay for the betrayal mechanic",
-      "(/highlight)requires the <betrayal> image-check to be set up correctly in the <screen-checks> section",
+      "(/highlight)you have to set up the <betrayal> check in the <screen-checks> section",
       "while the syndicate board is on screen, hold down the <omni-key> to activate the overlay"
     ],
     "betrayal ruthless": [
@@ -333,7 +333,7 @@
     ],
     "exchange enable": [
       "ratio calculator, small ux improvements, trade logging, and balance tracking for the in-game currency exchange",
-      "(/highlight)requires the <currency exchange> and <inventory> checks to be set up correctly in the <screen-checks> section",
+      "(/highlight)you have to set up the <currency exchange> check in the <screen-checks> section",
       "while the currency exchange is on screen, press the <omni-key> to activate the feature",
       "hold down <alt> to temporarily hide the overlay"
     ],
@@ -345,7 +345,7 @@
     ],
     "exchange async enable": [
       "quick-pricing functionality, and price/age tracking for listed items",
-      "(/highlight)requires the <async trade> checks to be set up correctly in the <screen-checks> section",
+      "(/highlight)you have to set up the <async trade> check in the <screen-checks> section",
       "while the async trade window is on screen, press the <omni-key> to activate the feature",
       "hold down <alt> to temporarily hide the overlay"
     ],
@@ -438,13 +438,13 @@
     ],
     "iteminfo shift-click": [
       "automatically refreshes/activates the tooltip when applying currency to items via shift-click",
-      "(/highlight)you have to hold down <shift> first, right click currency, and then click items",
-      "(/highlight)requires the <inventory> pixel-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <inventory> check in the <screen-checks> section",
+      "(/highlight)you have to hold down <shift> first, right click currency, and then click items"
     ],
     "iteminfo league-start": [
       "mainly intended for acts + early maps:\nadds a section where the item's stats are compared to your current gear",
       "hover over gear slots in the inventory and long-click the refresh buttons to load the info from equipped items, or long-right-click to clear the slot",
-      "(/highlight)requires the <inventory> pixel-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <inventory> check in the <screen-checks> section"
     ],
     "iteminfo affix-info icon": [
       "the last column will show an icon for the mod-group of an affix (if available)"
@@ -542,7 +542,7 @@
       "you can switch between skill sets by scrolling the mouse wheel",
       "–––––",
       "while the skill-tree is on screen, press the <omni-key> to show overlays with skill-tree schematics",
-      "(/highlight)requires the <skilltree> image-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <skilltree> check in the <screen-checks> section"
     ],
     "leveltracker skilltree clear": [
       "long-click to delete the skill-tree files used to render schematics: they will be re-downloaded the next time they are needed",
@@ -865,7 +865,7 @@
     "maptracker loot-tracker": [
       "items you ctrl-click into the stash will be logged",
       "ctrl-right-click will remove previously added items one by one (similar to ctrl-z in text editing)",
-      "(/highlight)requires the <stash> image-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <stash> check in the <screen-checks> section"
     ],
     "maptracker kill-tracker": [
       "monster kills in maps will be logged",
@@ -915,7 +915,7 @@
     "mapinfo shift-click": [
       "refreshes the tooltip whenever you apply currency to maps via shift-click",
       "you have to hold down <shift> first, right click currency, and then apply it",
-      "(/highlight)requires the <inventory> pixel-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <inventory> check in the <screen-checks> section"
     ],
     "mapinfo tab": [
       "hold down the <widget-key> to view a compact version of the panel on the right of the screen"
@@ -931,7 +931,10 @@
       "type in map-mods (in-game wording) and press <enter> to list them below"
     ],
     "mapinfo roll highlight": [
-      "highlights map rolls (quant, rarity, etc.) if they're above certain values"
+      [
+        "highlights map rolls (quant, rarity, etc.) if they're above certain values",
+        "highlights map rolls (item rarity, pack size, etc.) if they're above certain values"
+      ]
     ],
     "mapinfo roll colors": [
       "roll highlighting currently looks like this",
@@ -941,7 +944,7 @@
       "specify desired min values for each roll",
       [
         "quantity, rarity, pack size, maps, scarabs, currency",
-        "quantity, rarity, pack size, waystones"
+        "item rarity, pack size, monster rarity, monster effectiveness, waystone drop chance"
       ]
     ],
     "mapinfo mod settings": [
@@ -1018,6 +1021,35 @@
     "TLDR hotkey shared": [
       "the feature will be activated by holding down the in-game hotkey that toggles loot visibility (default: z)"
     ],
+    "quickpob enable": [
+      "(/highlight)experimental / proof-of-concept:\nrequires a path of building window in the background",
+      "copies items and creates movable widgets with pob calculations",
+      "hover over an item or the <copy item> button of a trade listing:\n>> press the hotkey to create a widget\n>> hold down the hotkey to switch to pob and import the item",
+      "single widgets can be closed with <esc>, multiple with <right-clicks>",
+      "(/highlight)to use this feature on trade listings, you have to set up the <trade search> check in the <screen-checks> section"
+    ],
+    "quickpob locate install": [
+      "optional feature:\nopen pob, then click this button to locate the pob install folder",
+      "this way, pob can be launched on demand via keypress and doesn't have to run in the background permanently"
+    ],
+    "quickpob mode compact": [
+      "when created, the widget only shows gains/losses (green/red text in pob)",
+      "you can click the top part of a widget (item name & base) to manually toggle between modes",
+      "(/highlight)if you create multiple widgets, the new one will use the same mode as the previous one."
+    ],
+    "quickpob mode full": [
+      "when created, the widget shows the full item tooltip as presented in pob",
+      "you can click the top part of a widget (item name & base) to manually toggle between modes",
+      "(/highlight)if you create multiple widgets, the new one will use the same mode as the previous one."
+    ],
+    "quickpob snip": [
+      "this feature scans pob for the item frame and creates a movable overlay widget",
+      "you have to calibrate it once so it knows where to search for the frame"
+    ],
+    "quickpob snip offset": [
+      "launch pob and open the <items> tab/section",
+      "long-click this button:\na teal square will follow the cursor. align its top-left corner with the top-left corner of the <craft item...> button in pob"
+    ],
     "runeshaping auto-correct input": [
       "type in one or more (comma-separated) strings that need to be replaced because of recurring ocr inaccuracies"
     ],
@@ -1049,7 +1081,7 @@
       "scans the rewards offered on runic remnants and displays their poe.ninja prices",
       "while the runeshaping ui is on screen, hold down the <omni-key> to activate this feature",
       "(/highlight)requires the english language pack. if your system is not english, you can add it as a secondary language in the windows settings.",
-      "(/highlight)requires the <runeshaping> screen-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <runeshaping> check in the <screen-checks> section"
     ],
     "runeshaping hold ctrl": [
       "while holding down the <omni-key>, the ctrl-key will automatically be held down as well",
@@ -1063,7 +1095,7 @@
       "analyzes rooms and connections on the floor map and offers tools for highlighting and planning",
       "while you're in the sanctum/trial and the floor plan is on screen, hold down the <omni-key> to show the overlay",
       "the overlay will hide when you release the key: press <space> to lock the overlay so it doesn't automatically hide",
-      "(/highlight)requires the <sanctum/sekhema floor map> screen-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <sanctum/sekhema floor map> check in the <screen-checks> section"
     ],
     "sanctum cheatsheet": [
       "shows an additional panel that lists the different room types and their objectives, as well as special fountain characteristics"
@@ -1071,7 +1103,7 @@
     "sanctum relics": [
       "overlay for relic management:\nsummarizes and groups relic effects, and offers search/highlight functionality",
       "while the relic altar is open, hold down the <omni-key> over a relic to open the overlay",
-      "(/highlight)requires the <inventory> pixel-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <inventory> check in the <screen-checks> section"
     ],
     "screenchecks pixel-about": [
       "the tool continually checks the screen for certain ui elements",
@@ -1224,7 +1256,7 @@
       [
         "enter c or d if you want to display chaos or divine prices",
         "enter c, e, or d if you want to display chaos, exalt, or divine prices"
-      ],      
+      ],
       "enter % if you want to display price trends"
     ],
     "stash profiles": [
@@ -1242,14 +1274,18 @@
       "atlas feature that displays various information about maps on the atlas",
       "hold down the <omni-key> over maps on the atlas to activate the overlay",
       "(/highlight)uses built-in windows functionality. if the game's language is not available on your windows install, you will have to manually add it as a secondary language",
-      "(/highlight)requires the <atlas> screen-check to be set up correctly in the <screen-checks> section"
+      "(/highlight)you have to set up the <atlas> check in the <screen-checks> section"
     ],
     "statlas maptracker": [
       "the overlay will show stats collected via the map-tracker feature"
     ],
+    "statlas troubleshoot": [
+      "pressing <alt> + <omni-key> will open the screen-cap and ocr results",
+      "this can be used to find scan or screen-cap issues"
+    ],
     "updater check": [
       "checks for updates on tool launch and in the background while running",
-      "the menu-widget will blink if an update is available"
+      "the menu-widget will flash if an update is available"
     ],
     "updater hotfix": [
       "a hotfix release is available, you can download it below",
@@ -1689,7 +1725,7 @@
       [
         "enter a value x and click <apply/update> to hide everything under x chaos. enter 0 to revert to defaults",
         "enter a value x and click <apply/update> to hide everything under x exalts. enter 0 to revert to defaults"
-      ],      
+      ],
       "(/highlight)sometimes, there's a discrepancy in categorization between poe.ninja and neversink filters (currency vs fragment)",
       "(/highlight)filter rules will be created according to poe.ninja's categories"
     ],
@@ -2164,6 +2200,12 @@
     "stash": [
       "(/bold)(/underline)instructions:",
       "-> open the stash",
+      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
+      "-> follow the instructions in <test>"
+    ],
+    "tradesearch": [
+      "(/bold)(/underline)instructions:",
+      "-> open the async-trade search: the plaque at the top (img) has to be fully visible",
       "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
       "-> follow the instructions in <test>"
     ]
