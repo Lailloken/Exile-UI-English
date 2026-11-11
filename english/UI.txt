@@ -43,7 +43,8 @@
 ;#####################################################
 
 ;## these names will be shown in a tooltip when hovering over the "credits" label	;## the tooltip is segmented into smaller boxes
-		translator			=	"lailloken"			;## you can add additional <contributor> lines, and each value will have its own box
+		translator			=	"translators:"
+		translator			=	"lailloken"			;## you can add additional <translator> lines, and each value will have its own box
 
 
 
@@ -54,6 +55,8 @@
 ;## these are the individual sections of the settings menu, and most refer to a feature
 ;## these don't necessarily have to be translated, it's up to the translator(s)
 ;## the feature-names are used here and there, so make sure to be consistent across each mention
+		ms_header				=	"features"
+		ms_header2			=	"misc. settings"
 		ms_general			=	"general"
 		ms_actdecoder			=	"act-decoder"
 		ms_addons				=	"add-ons"
@@ -97,6 +100,7 @@
 		global_abort			=	"aborted"
 		global_delete			=	"delete"
 		global_delete			=	"del"
+		global_delete			=	"deleted"
 		global_scan			=	"scanning..."
 		global_scan			=	"scan"
 		global_match			=	"no match"
@@ -110,6 +114,7 @@
 		global_enable			=	"enable"
 		global_reset			=	"reset"
 		global_reset			=	"r"
+		global_reset			=	"reset position"
 		global_color			=	"color"
 		global_color			=	"colors:"
 		global_opacity			=	"opacity:"
@@ -151,6 +156,9 @@
 		global_errorname		=	"name must not contain:;"
 		global_inventory		=	"inventory"
 		global_skilltree		=	"skilltree"
+		global_skilltree		=	"skilltrees"
+		global_tree			=	"tree"
+		global_tree			=	"trees"
 		global_ascendancy		=	"ascendancy-tree"
 		global_atlas			=	"atlas"
 		global_stash			=	"stash"
@@ -220,13 +228,11 @@
 		global_league_sc		=	"sc"				;## softcore league
 		global_league_hc		=	"hc"				;## hardcore league
 		global_league_standard	=	"standard"
-		global_league_keepers	=	"keepers"
 		global_league_phrecia	=	"phrecia"
-		global_league_vaal		=	"vaal"
 		global_league_aldur		=	"aldur"
-		global_league_mirage	=	"mirage"
 		global_league_rites		=	"ritual event"
 		global_league_allflame	=	"allflame"
+		global_league_umbra		=	"umbra"
 		global_league_ssf		=	"ssf"
 		global_league_trade		=	"trade"
 		global_league_ruthless	=	"ruthless"
@@ -293,8 +299,7 @@
 		global_large			=	"large"
 		global_active			=	"active:"			;## as in currently active/selected
 		global_meta			=	"meta:"			;## as in meta info/knowledge/data
-		global_animations		=	"ui animations"	;## as in UI transitions, movement, etc.
-		global_animations		=	"animations"
+		global_animations		=	"animations"		;## as in UI transitions, movement, etc.
 		global_hold_ctrl		=	"hold ctrl"
 		global_load			=	"load"
 		global_troubleshoot		=	"trouble-shooting"
@@ -309,6 +314,19 @@
 		global_full			=	"full"
 		global_compact			=	"compact"
 		global_folder			=	"folder"
+		global_warning			=	"warning"
+		global_read			=	"read"
+		global_design			=	"design"
+		global_old			=	"old"
+		global_new			=	"new"
+		global_theme			=	"theme"			;## as in UI (color) theme
+		global_blue			=	"blue"
+		global_gray			=	"gray"
+		global_choc			=	"choc"			;## as in chocolate color theme
+		global_fill			=	"fill"			;## as in filling a UI shape/button with color
+		global_contrast		=	"contrast"		;## setting for additional contrast around buttons
+		global_manual			=	"manual"			;## opposite of automatic
+		global_menu			=	"menu"
 
 		mechanic_bestiary		=	"bestiary"
 		mechanic_betrayal		=	"betrayal"
@@ -343,6 +361,16 @@
 		msg_clientswitch		=	"switch clients?"	;## window text for when you switch between games while the tool is running
 		msg_clientswitch		=	"you have switched to a different game-client, do you want the tool to switch/restart as well?"
 		msg_clientswitch		=	"if not, launch the correct client and then click <no>"
+
+		msg_langswitch			=	"The game was launched with a different language setting."
+
+		msg_badresolution		=	"Unsupported resolution detected"
+		msg_badresolution		=	"The tool has detected an unsupported vertical resolution:"
+		msg_badresolution		=	"You have to run the client with a custom resolution, which you can set up in the following window."
+
+		msg_restart			=	"The tool will now restart."
+		msg_shutdown			=	"The tool will now close."
+		msg_proceed			=	"Do you want to proceed?"
 
 
 
@@ -626,8 +654,6 @@
 		lootfilter_minsupportlevel	=	"min supp."								;## min level for support gems
 		lootfilter_socketables		=	"socketables"
 
-		lootfilter_notification		=	"sync lootfilter"							;## configurable reminder notification after X hours
-
 
 
 ;#####################################################
@@ -712,6 +738,15 @@
 		quickpob_loading		=	"waiting for;build to load..."
 		quickpob_snip			=	"snip offset:"
 
+
+
+;#####################################################
+;## (map-event) notifications
+;#####################################################
+
+;## these strings are displayed/required for notifications
+		notification_lootfilter	=	"sync lootfilter"
+		notification_updater	=	"update available"
 
 
 ;#####################################################
@@ -873,7 +908,7 @@
 		stash_reminder			=	"switch to <note> first"
 		stash_limits			=	"rate limits:"			;## GGG's APIs have tiered rate limits that control how often you can access them
 		stash_open			=	"open"				;## in the context of "X open trade listings"
-		stash_nolistings		=	"no listings;online"		;## i.e. no-one is selling that item right now
+		stash_nolistings		=	"no listings;online"	;## i.e. no-one is selling that item right now
 		stash_bulk			=	"bulk:"
 		stash_stock			=	"stock"				;## as in available stock
 		stash_pricetags		=	"price tags:"
@@ -914,7 +949,7 @@
 		m_general_autoclose		=	"auto-close:"
 		m_general_browser		=	"browser qol"
 		m_general_capslock		=	"caps-toggle"							;## by default, AHK will toggle capslock back and forth whenever it sends key-strokes
-		m_general_charleague	=	"character & league:"
+		m_general_charleague	=	"league & character:"
 		m_general_character		=	"char"
 		m_general_level		=	"lvl"
 		m_general_client		=	"game-client settings:"
@@ -925,9 +960,9 @@
 		m_general_language		=	"not supported"
 		m_general_language		=	"(some features may not be available)"
 		m_general_display		=	"detected window:"						;## refers to the client-window
-		m_general_display		=	"windowed fullscreen"
+		m_general_display		=	"wind. fullscreen"
 		m_general_display		=	"windowed"
-		m_general_display		=	"borderless windowed"
+		m_general_display		=	"borderless wind."
 		m_general_resolution	=	"custom resolution:"
 		m_general_resolution	=	"resolution:"
 		m_general_screenfiller	=	"screen-filler"
@@ -941,7 +976,7 @@
 		m_general_postaskbar	=	"taskbar"
 		m_general_borderless	=	"apply borderless-windowed mode"
 		m_general_borderless	=	"borderless"
-		m_general_blackbars		=	"the client has black bars on the sides"	;## black bars as in letterboxes
+		m_general_ultrawidebars	=	"black bars"							;## black bars as in letterboxes
 		m_general_permissions	=	"write-permissions test:"
 		m_general_start		=	"start test"
 		m_general_admin		=	"restart as admin"
@@ -971,13 +1006,14 @@
 		m_permission_image		=	"can delete image-files:"
 		m_permission_error		=	"There are some leftover files from a previous test, and the tool cannot delete them."
 		m_permission_error		=	"Please delete the 'write-test' folder within the folder that will open after closing this message."	;## NOTE: don't translate the name of folders (as they're hard-coded and not localized)
+		m_permission_restart	=	"Do you want to restart the tool with admin rights?"
 
 ;## these strings are displayed/required in an error-message related to write-permissions
 		m_permission_error1		=	"The tool couldn't create a file/folder:"
 		m_permission_error1		=	"The tool couldn't delete a file/folder:"
 		m_permission_error1		=	"There seeem to be write-permission issues in the current folder location."
 		m_permission_error1		=	"Try moving the tool to another location or running it as administrator."
-		m_permission_error1		=	"There is a write-permissions test in the settings menu that you can use to troubleshoot this issue."
+		m_permission_error1		=	"There is a write-permissions test in the <general> settings that you can use to troubleshoot this issue."
 		m_permission_error1		=	"It's highly recommended to fix this issue as many features will not work correctly otherwise."
 
 
@@ -1004,8 +1040,20 @@
 ;## these strings are displayed/required in the "add-ons" section of the settings menu
 		m_addons_failed		=	"write issue: couldn't create add-ons folder"
 		m_addons_warning		=	"warning: proceed with caution and do your own research"
-		m_addons_warning		=	"WARNING:;;Add-ons are not validated and may contain dangerous code.;Please do your own research and check the source code before downloading them.;;Do you want to proceed?"
+		m_addons_warning2		=	"Add-ons are not validated and may contain dangerous code."
+		m_addons_warning2		=	"Please do your own research and check the source code before downloading them."
 		m_addons_list			=	"list of downloaded add-ons:"
+		m_addons_leftover		=	"There are left-over zip-files from previous downloads that couldn't be deleted. You have to manually delete them."
+		m_addons_leftover		=	"Do you want to open the folder?"
+		m_addons_importfail		=	"download failed"
+		m_addons_importfail		=	"add-on info couldn't be downloaded"
+		m_addons_importfail		=	"add-on doesn't support this game version"
+		m_addons_importfail		=	"add-on info is incorrect/incompatible"
+		m_addons_importfail		=	"duplicate add-on names"
+		m_addons_importfail		=	"zip-extraction failed"
+		m_addons_importfail		=	"unexpected zip contents"
+		m_addons_importfail		=	"couldn't move add-on folder"
+		m_addons_disable		=	"disabling add-ons requires a restart."
 
 
 
@@ -1084,7 +1132,7 @@
 		m_hotkeys_settings		=	"tool keybind settings:"
 		m_hotkeys_descriptions	=	"<show advanced item descriptions>;is not bound to the alt-key"		;## in-game setting, usually on ALT
 		m_hotkeys_descriptions	=	"instead, it is bound to:"
-		m_hotkeys_ckey			=	"the c-key is used for something;other than <character screen>"		;## in-game setting, on C by default
+		m_hotkeys_ckey2		=	"c-key is rebound"
 		m_hotkeys_movekey		=	"move-key:"												;## i.e. the key used to move the character, default l-mouse
 		m_hotkeys_omnikey_new	=	"omni-key:"
 		m_hotkeys_exclusive		=	"exclusive"												;## option that blocks what a key normally does, e.g. CapsLock-key toggles capslock-state, windows-key opens start-menu
@@ -1152,14 +1200,16 @@
 		m_lvltracker_lvltips		=	"lvl tips"
 		m_lvltracker_pagehotkeys		=	"page-hotkeys"
 		m_lvltracker_poboverlays		=	"pob overlay settings:"
-		m_lvltracker_pobgems		=	"gems: use toggle instead of hold"
 		m_lvltracker_pobmanual		=	"tree: use screen-caps instead of schematics"
 		m_lvltracker_pob			=	"pob: middle-click opens screen-cap menu"
 		m_lvltracker_screencap		=	"screen-cap menu"
 		m_lvltracker_guide			=	"guides:"
+		m_lvltracker_guide			=	"guide"
 		m_lvltracker_incompatible	=	"incompatible guide-data,;update required"
 		m_lvltracker_treeclear		=	"delete data"
-		m_lvltracker_leaguestart		=	"league-start"
+		m_lvltracker_quests			=	"quests"
+		m_lvltracker_quests			=	"loot"
+		m_lvltracker_leaguestart		=	"new league"
 		m_lvltracker_optionals		=	"optionals"						;## refers to optional loot, quests, etc.
 		m_lvltracker_bandit			=	"bandit"
 		m_lvltracker_bandits		=	"alira"
@@ -1226,13 +1276,25 @@
 ;## these strings are displayed/required in the "announcements" section of the settings menu
 		m_news_recent			=	"most recent announcement(s):"
 
+
+
+;#####################################################
+;## settings menu: (map-event) notifications
+;#####################################################
+
+
+;## these strings are displayed/required in the "(map-event) notifications" section of the settings menu
+		m_notifications_label	=	"map-event notifications:"
+		m_notifications_label2	=	"feature notifications:"
+
+
+
 ;#####################################################
 ;## settings menu: minor qol tools
 ;#####################################################
 
 ;## these strings are displayed/required in the "minor qol tools" section of the settings menu
 		m_qol_alarm			=	"alarm/timer widget:"
-		m_qol_map_events		=	"map-event notifications:"
 		m_qol_notepad			=	"notepad:"
 		m_qol_widget			=	"widget opacity:"
 		m_qol_widgetcolor		=	"widget colors:"
@@ -1374,6 +1436,9 @@
 		m_updater_changelog		=	"full changelog"
 		m_updater_skip			=	"skip"
 		m_updater_failed		=	"update failed:"
+		m_updater_autocheck		=	"auto-check"
+
+
 		m_updater_error1		=	"the last update attempt failed because of write-permission errors. please open the <general> section of the settings and run the test at the bottom."
 		m_updater_error1		=	"fixing these issues is critical not just for the updater but for many other features as well."
 
